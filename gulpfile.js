@@ -10,6 +10,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     autoprefixer = require('autoprefixer'),
     pngquant = require('imagemin-pngquant'),
+    ghPages = require('gulp-gh-pages'),
     jpegoptim = require('imagemin-jpegoptim');
 
 gulp.task('browserSync', function() {
@@ -162,6 +163,11 @@ gulp.task('complierTask', ['clean'], function() {
 
     gulp.start('clean_jadeTemplate', 'scss', 'imageCompress');
 
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./public/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('default', ['complierTask', 'browserSync'], function() {
