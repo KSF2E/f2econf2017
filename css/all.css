@@ -8712,7 +8712,7 @@ ul.detailContent_list li:before {
 }
 
 .pic:before {
-  width: 70%;
+  width: 100%;
   padding-top: 100%;
   content: '';
   display: block;
