@@ -7836,7 +7836,7 @@ ul {
 }
 
 .header_mainVisual .mainVisualPic {
-  background-image: url(/images/header/header-L.png);
+  background-image: url(../images/header/header-L.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -7844,7 +7844,7 @@ ul {
 
 @media (max-width: 480px) {
   .header_mainVisual .mainVisualPic {
-    background-image: url(/images/header/header-M.png);
+    background-image: url(../images/header/header-M.png);
   }
 }
 
