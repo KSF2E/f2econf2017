@@ -1,0 +1,24 @@
+.btn {
+    cursor: pointer;
+    border-radius: 2em;
+    margin: 0 5px 5px 0;
+    font-size: $font-larger;
+}
+
+.btn-primary {
+    border: 2px solid $colorMainSecond;
+    color: $colorMainSecond;
+    background: $colorMainThird;
+    padding: .5em 2.5em;
+    &.is-active,
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:link {
+        border: 2px solid $colorMainThird;
+        background: $colorMainSecond;
+        color: $colorMainThird;
+    }
+    &.is-muted {}
+}

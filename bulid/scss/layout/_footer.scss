@@ -1,0 +1,51 @@
+.footer {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    text-align: center;
+    min-height: 70vh;
+    overflow: hidden;
+    @include pad-below {
+        min-height: 80vh;
+    }
+    background: linear-gradient(top, #461D87, #221938);
+}
+
+.footerContent {
+    position: absolute;
+    z-index: 2;
+    margin: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.footerContent_contact {
+    margin-top: 20vh;
+    img {
+        margin: 0 10px;
+        padding-right: 10px;
+        border-right: 1px solid $colorMainSecond;
+    }
+    a {
+        color: $colorMainSecond;
+        text-decoration: none;
+        margin: 0 5px;
+        vertical-align: middle;
+        font-size: 1.6em;
+        cursor: pointer;
+        &.is-active,
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:focus,
+        &:link {
+            color: $colorMainThird;
+        }
+    }
+    .info {
+        font-size: $font-small;
+        margin: 5vh auto 2vh;
+        color: $colorGray;
+    }
+}

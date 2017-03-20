@@ -1,0 +1,64 @@
+.speaker {
+    position: relative;
+    z-index: 1;
+    background-image: url(../images/bg/bg_deepStar.png);
+    background-size: 45px;
+    padding: 5vh 0;
+    .title {
+        color: $colorMainThird;
+    }
+    .text {
+        text-align: justify;
+        min-height: 180px;
+        @include pad () {
+            min-height: 150px;
+        }
+        @include pad-below () {
+            min-height: initial;
+        }
+    }
+    .info {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        border-top: 1px solid $colorGray-light;
+        @include pad-below () {
+            position: static;
+        }
+        a {
+            font-size: $font-small;
+            color: $colorMainFouth;
+            text-decoration: none;
+            border-right: 1px solid $colorMainFouth;
+            margin-right: 5px;
+            padding-right: 5px;
+            &.is-active,
+            &:hover,
+            &:focus,
+            &:active,
+            &:active:focus {
+                color: $colorMainSecond;
+            }
+        }
+    }
+}
+
+.speakerContent {
+    overflow: auto;
+    margin: auto;
+    max-width: 960px;
+    margin-top: 60px;
+    li {
+        padding: 10px 1% 30px;
+        @include mobile() {
+            padding: 5px 4%;
+        }
+    }
+}
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 0 rgba(255, 223, 60, 0.8);
+    position: relative;
+}
