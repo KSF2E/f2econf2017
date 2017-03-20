@@ -8626,7 +8626,7 @@ ul.detailContent_list li:before {
 }
 
 .figure-position-13 {
-  top: 23%;
+  top: 10%;
   right: 40%;
 }
 
@@ -8712,7 +8712,7 @@ ul.detailContent_list li:before {
 }
 
 .pic:before {
-  width: 100%;
+  width: 70%;
   padding-top: 100%;
   content: '';
   display: block;
