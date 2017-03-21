@@ -1,5 +1,8 @@
 node_modules/
 bower_components/
+<<<<<<< HEAD
+=======
 yarn.lock
 public
 .publish
+>>>>>>> 6898122112fd09fbfaedaf2d5135ab76ea091b46
