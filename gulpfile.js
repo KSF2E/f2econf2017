@@ -150,7 +150,14 @@ gulp.task('deploy', function() {
         .pipe(ghPages());
 });
 
-gulp.task('default', ['complierTask', 'browserSync'], function() {
+gulp.task('otherFiles', function() {
+
+  gulp.src([path.bulid + 'CNAME'])
+      .pipe(gulp.dest(path.public));
+
+})
+
+gulp.task('default', ['complierTask', 'browserSync', 'otherFiles'], function() {
 
     gulp.watch(path.bulid + 'jade/**/*.jade', ['clean_jadeTemplate']);
     gulp.watch(path.bulid + 'scss/**/*.scss', ['scss']);
