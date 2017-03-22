@@ -7738,8 +7738,18 @@ html {
 
 @font-face {
   html {
-    font-family: "GenJyuuGothicX-Bold";
-    src: url(/fonts/GenJyuuGothicX-Bold.ttf);
+    font-family: 'GenJyuuGothicX-Bold';
+    src: local("GenJyuuGothic-Bold"), local("GenJyuuGothic Bold"), local("GenJyuuGothicX-Bold"), url(GenJyuuGothicX-Bold.ttf), url(/fonts/GenJyuuGothicX-Bold.ttf) format("truetype");
+  }
+}
+
+@font-face {
+  html {
+    font-family: 'cwTeXYen';
+    font-style: normal;
+    font-weight: 500;
+    src: url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+    src: url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format("embedded-opentype"), url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format("woff2"), url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format("woff"), url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format("truetype");
   }
 }
 
@@ -7906,9 +7916,7 @@ p.info {
 }
 
 .about {
-  position: relative;
-  z-index: 1;
-  font-family: "GenJyuuGothicX-Bold";
+  font-family: "GenJyuuGothicX-Bold", "cwTeXYen", Arial, Geneva, "Microsoft JhengHei", sans-serif;
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
@@ -7989,8 +7997,6 @@ p.info {
 .speaker {
   position: relative;
   z-index: 1;
-  background-image: url(../images/bg/bg_deepStar.png);
-  background-size: 45px;
   padding: 5vh 0;
 }
 
@@ -8030,9 +8036,9 @@ p.info {
 
 .speaker .info a {
   font-size: 0.85714rem;
-  color: #24ffb0;
+  color: #08cd86;
   text-decoration: none;
-  border-right: 1px solid #24ffb0;
+  border-right: 1px solid #08cd86;
   margin-right: 5px;
   padding-right: 5px;
 }
@@ -8186,6 +8192,21 @@ ul.detailContent_list li:before {
 
 .coorganizer-panel:before {
   background: #ff4f94;
+}
+
+.liveBroadcast {
+  position: relative;
+  background-color: #461d87;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer {
@@ -8720,7 +8741,7 @@ ul.detailContent_list li:before {
 
 .tab {
   position: relative;
-  font-family: "GenJyuuGothicX-Bold";
+  font-family: "GenJyuuGothicX-Bold", "cwTeXYen", Arial, Geneva, "Microsoft JhengHei", sans-serif;
   display: block;
   text-align: center;
   color: #2a1672;
