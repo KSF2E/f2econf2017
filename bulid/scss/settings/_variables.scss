@@ -5,7 +5,7 @@
 // *********************************************
 $font-family-base: Arial,
 Geneva,
-"Microsoft JhengHei",
+'Microsoft JhengHei',
 sans-serif;
 $font-size-base: 14px;
 $font-larger: 1.5rem;
@@ -21,11 +21,15 @@ $colorMainFirst:#2a1672;
 $colorMainSecond:#ffdf3c;
 $colorMainThird:#ff4f94;
 $colorMainFouth:#24ffb0;
-$colorSubFirst:#9e93bb;
+$colorMainFirst-light:#9e93bb;
+$colorMainFouth-dark:#08cd86;
+$colorSubFirst:#39006c;
 $bgcolor: $colorMainFirst;
 $color: #383838;
 $colorGray:#9B9B9B;
 $colorGray-light:#d8d8d8;
+$colorGradientFirst:#461d87;
+$colorGradientSecond:#221938;
 // $color-muted
 // $color-primary
 // $color-success:#C66F78;

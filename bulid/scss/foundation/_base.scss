@@ -1,7 +1,21 @@
 html {
     @font-face {
-        font-family: "GenJyuuGothicX-Bold";
-        src: url(/fonts/GenJyuuGothicX-Bold.ttf);
+        font-family: 'GenJyuuGothicX-Bold';
+        src: local('GenJyuuGothic-Bold'),
+        local('GenJyuuGothic Bold'),
+        local('GenJyuuGothicX-Bold'),
+        url(GenJyuuGothicX-Bold.ttf),
+        url(/fonts/GenJyuuGothicX-Bold.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'cwTeXYen';
+        font-style: normal;
+        font-weight: 500;
+        src: url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot);
+        src: url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.eot?#iefix) format('embedded-opentype'),
+        url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff2) format('woff2'),
+        url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.woff) format('woff'),
+        url(http://fonts.gstatic.com/ea/cwtexyen/v3/cwTeXYen-zhonly.ttf) format('truetype');
     }
     height: 100%;
 }
