@@ -7739,7 +7739,14 @@ html {
 @font-face {
   html {
     font-family: 'GenJyuuGothicX-Bold';
-    src: local("GenJyuuGothic-Bold"), local("GenJyuuGothic Bold"), local("GenJyuuGothicX-Bold"), url(GenJyuuGothicX-Bold.ttf), url(/fonts/GenJyuuGothicX-Bold.ttf) format("truetype");
+    src: local("GenJyuuGothic-Bold"), local("GenJyuuGothicX Bold"), local("GenJyuuGothicX-Bold"), url(GenJyuuGothicX-Bold.ttf), url(/fonts/GenJyuuGothicX-Bold.ttf) format("truetype");
+  }
+}
+
+@font-face {
+  html {
+    font-family: 'GenJyuuGothicX-Medium';
+    src: local("GenJyuuGothic-Bold"), local("GenJyuuGothicX Medium"), local("GenJyuuGothicX-Medium"), url(GenJyuuGothicX-Medium.ttf), url(/fonts/GenJyuuGothicX-Medium.ttf) format("truetype");
   }
 }
 
@@ -7916,7 +7923,7 @@ p.info {
 }
 
 .about {
-  font-family: "GenJyuuGothicX-Bold", "cwTeXYen", Arial, Geneva, "Microsoft JhengHei", sans-serif;
+  font-family: "GenJyuuGothicX-Medium", "cwTeXYen", Arial, Geneva, "Microsoft JhengHei", sans-serif;
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
@@ -7997,7 +8004,7 @@ p.info {
 .speaker {
   position: relative;
   z-index: 1;
-  padding: 5vh 0;
+  padding: 10vh 0;
 }
 
 .speaker .title {
@@ -8076,7 +8083,7 @@ p.info {
   background: #ff4f94;
   position: relative;
   z-index: 1;
-  padding: 60px 4%;
+  padding: 10vh 4%;
 }
 
 .detail-panel {
@@ -8180,7 +8187,7 @@ ul.detailContent_list li:before {
   background: #ffdf3c;
   position: relative;
   z-index: 1;
-  padding: 60px 4%;
+  padding: 10vh 4%;
 }
 
 .coorganizer-panel {
