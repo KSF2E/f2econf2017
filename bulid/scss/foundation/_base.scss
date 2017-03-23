@@ -2,10 +2,18 @@ html {
     @font-face {
         font-family: 'GenJyuuGothicX-Bold';
         src: local('GenJyuuGothic-Bold'),
-        local('GenJyuuGothic Bold'),
+        local('GenJyuuGothicX Bold'),
         local('GenJyuuGothicX-Bold'),
         url(GenJyuuGothicX-Bold.ttf),
         url(/fonts/GenJyuuGothicX-Bold.ttf) format('truetype');
+    }
+    @font-face {
+        font-family: 'GenJyuuGothicX-Medium';
+        src: local('GenJyuuGothic-Bold'),
+        local('GenJyuuGothicX Medium'),
+        local('GenJyuuGothicX-Medium'),
+        url(GenJyuuGothicX-Medium.ttf),
+        url(/fonts/GenJyuuGothicX-Medium.ttf) format('truetype');
     }
     @font-face {
         font-family: 'cwTeXYen';
