@@ -9,9 +9,9 @@
     }
     .text {
         text-align: justify;
-        min-height: 180px;
+        min-height: 205px;
         @include pad () {
-            min-height: 150px;
+            min-height: 170px;
         }
         @include pad-below () {
             min-height: initial;
