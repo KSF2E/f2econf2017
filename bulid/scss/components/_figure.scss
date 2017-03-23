@@ -31,6 +31,9 @@
     &.hop-02 {
         animation: hop 5s infinite alternate;
     }
+    &.shiny-01 {
+        animation: shiny 3s infinite alternate;
+    }
 }
 
 .figure-earth {
@@ -182,6 +185,12 @@
 .figure-star-07 {
     background-image: url(../images/figure/figure-star-07.svg);
 }
+.figure-star-08 {
+    background-image: url(../images/figure/figure-star-08.svg);
+}
+.figure-star-09 {
+    background-image: url(../images/figure/figure-star-09.svg);
+}
 
 // size
 .figure-xl {
@@ -207,13 +216,25 @@
 // animation
 @keyframes flare {
     0% {
-        opacity: 0;
+        opacity:.2;
     }
     33% {
         opacity: .7;
     }
     100% {
         transform: .2;
+    }
+}
+
+@keyframes shiny {
+    0% {
+        opacity:.2;
+    }
+    60% {
+        opacity: .9;
+    }
+    100% {
+        transform: .5;
     }
 }
 
