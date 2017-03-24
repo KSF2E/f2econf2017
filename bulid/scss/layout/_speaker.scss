@@ -1,17 +1,17 @@
 .speaker {
     position: relative;
     z-index: 1;
-    background-image: url(../images/bg/bg_deepStar.png);
-    background-size: 45px;
-    padding: 5vh 0;
+    // background-image: url(../images/bg/bg_deepStar.png);
+    // background-size: 45px;
+    padding: 10vh 0;
     .title {
         color: $colorMainThird;
     }
     .text {
         text-align: justify;
-        min-height: 180px;
+        min-height: 205px;
         @include pad () {
-            min-height: 150px;
+            min-height: 170px;
         }
         @include pad-below () {
             min-height: initial;
@@ -27,9 +27,9 @@
         }
         a {
             font-size: $font-small;
-            color: $colorMainFouth;
+            color: $colorMainFouth-dark;
             text-decoration: none;
-            border-right: 1px solid $colorMainFouth;
+            border-right: 1px solid $colorMainFouth-dark;
             margin-right: 5px;
             padding-right: 5px;
             &.is-active,

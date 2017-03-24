@@ -1,14 +1,18 @@
 @import "bootstrap";
 @import "settings/variables";
 @import "settings/maps";
+
 // tools
 @import "tools/mixins";
 // @import "tools/extend";
+
 // Reset and dependencies
 // @import "foundation/normalize";
+
 // Base
 @import "foundation/base";
 @import "foundation/utilities";
+
 // Layout
 @import "layout/header";
 @import "layout/nav";
@@ -18,10 +22,15 @@
 @import "layout/speaker";
 @import "layout/detail";
 @import "layout/coorganizer";
+@import "layout/liveBroadcast";
 @import "layout/footer";
+
 // Components
 @import "components/figure";
+@import "components/figure-position";
 @import "components/button";
 @import "components/pic";
-@import "components/tab";// Vendor
+@import "components/tab";
+
+// Vendor
 @import "vendor/font-awesome";

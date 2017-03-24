@@ -5,35 +5,40 @@ block title
 	link(rel="stylesheet", href="css/all.css")
 
 block header
+	//- 星背景
 	section.star
 		.figure.figure-earth
 		.figure.figure-planet-01
 		.figure.figure-planet-02
 		.figure.figure-comet
-		.figure.figure-star-01.hop-01.figure-position-01.figure-l
-		.figure.figure-star-01.flare-01.figure-position-02.figure-m
-		.figure.figure-star-01.hop-01.figure-position-03.figure-s
-		.figure.figure-star-01.figure-position-04.figure-xs
+		//- A
+		.figure.figure-star-02.flare-01.figure-positionA-01.figure-m
+		.figure.figure-star-01.figure-positionA-03.figure-l
+		.figure.figure-star-09.flare-01.figure-positionA-04.figure-xs
+		.figure.figure-star-05.shiny-01.figure-positionA-02.figure-xs			
+		//- B
+		.figure.figure-star-01.flare-01.figure-positionB-01.figure-m
+		.figure.figure-star-05.hop-01.figure-positionB-02.figure-s
+		.figure.figure-star-09.figure-positionB-03.figure-xs
+		.figure.figure-star-07.flare-01.figure-positionB-04.figure-xs
+		//- C
+		.figure.figure-star-01.hop-01.figure-positionC-01.figure-l
+		.figure.figure-star-08.shiny-01.figure-positionC-02.figure-xs
+		.figure.figure-star-02.hop-02.figure-positionC-03.figure-s
+		.figure.figure-star-03.flare-02.figure-positionC-04.figure-xl
+		.figure.figure-star-04.hop-01.figure-positionC-05.figure-m
+		//- D
+		.figure.figure-star-02.hop-01.figure-positionD-01.figure-m
+		.figure.figure-star-04.hop-01.figure-positionD-02.figure-m
+		.figure.figure-star-09.figure-positionD-03.figure-xs
 
-		.figure.figure-star-02.hop-01.figure-position-05.figure-m
-		.figure.figure-star-02.flare-01.figure-position-06.figure-m
-		.figure.figure-star-02.hop-01.figure-position-07.figure-s
-		.figure.figure-star-02.hop-02.figure-position-08.figure-xs
-
-		.figure.figure-star-03.hop-01.figure-position-09.figure-xs
-		.figure.figure-star-03.flare-01.figure-position-10.figure-xl
-		.figure.figure-star-03.hop-01.figure-position-11.figure-m
-		.figure.figure-star-03.figure-position-12.figure-l
-
-		.figure.figure-star-04.hop-01.figure-position-13.figure-xs
-		.figure.figure-star-04.flare-01.figure-position-14.figure-xs
-		.figure.figure-star-04.hop-01.figure-position-15.figure-m
-		.figure.figure-star-04.hop-01.figure-position-16.figure-xs		
+	//- 導航
 	//- nav
 	//- section.nav
 	//- 	ul
 	//- 		li 議程
 	//- 		li 交通資訊
+	
 	//- 主視覺
 	section.header.text-center
 		.header_mainVisual
@@ -54,7 +59,7 @@ block header
 						h4.issueTopic 十年一覺前端夢
 						.issueSpeak
 							span 講者
-							span kkbox lock
+							span Lock Chou
 					li
 						.issueTime 
 						h4.issueTopic 用 RxJS 寫出可讀的程式碼
@@ -63,7 +68,7 @@ block header
 							span Jerry Hong
 					li
 						.issueTime 
-						h4.issueTopic 前端團隊管理
+						h4.issueTopic 前端團隊奴的日常
 						.issueSpeak
 							span 講者
 							span Aaron (小狂)
@@ -78,80 +83,24 @@ block header
 						h4.issueTopic 如何自訂 Google Blockly 積木大解密
 						.issueSpeak
 							span 講者
-							span Marty						
+							span Marty
 					li 
 						.issueTime 
 						h4.issueTopic 設計與前端的結合
 						.issueSpeak
 							span 講者
 							span Hsiang Lee
+
 block content
+
 	//- 講者
-	//- include ./layout/_speaker.jade
-	section.speaker
-		.tab.pinkDeco.yellowStyle 
-			.tab_h1 講者
-			.tab_sub Speakers
-		ul.speakerContent
-			li.col-lg-4.col-md-4.col-sm-6.col-xs-12
-				.card
-					.pic(style="background-image:url(images/speaker/aaron.jpg);")
-					h4.title Aaron (小狂)
-					p.text 
-						| 曾任職於外商軟體公司、手機遊戲公司，參與過數間新創公司和開發團隊，創辦逾千人的技術社群，	舉辦數次技術研討會與實作課程。目前活躍於GitHub、CodePen、台北街頭、桃園路邊和咖啡館。
-					.info
-						a(href="https://www.linkedin.com/in/aaronchuo/",target="_blank") Linkedin
-						a(href="https://github.com/AaronChuo",target="_blank") Github
-						a(href="https://www.facebook.com/crman1008",target="_blank") Facebook
-						a(href="http://codepen.io/aaronchuo/",target="_blank") CodePen
-			li.col-lg-4.col-md-4.col-sm-6.col-xs-12
-				.card
-					.pic(style="background-image:url(images/speaker/hsiang.jpg);")
-					h4.title Hsiang
-					p.text 
-						| 原設計出身、後轉前端工程師，目前擔任轉轉創意的製作經理。
-					.info
-						a(href="http://whalesingswee.co",target="_blank") Website
-						a(href="https://github.com/whalesingswee",target="_blank") Github
-						a(href="https://www.facebook.com/hsianglee",target="_blank") Facebook
-			li.col-lg-4.col-md-4.col-sm-6.col-xs-12
-				.card
-					.pic(style="background-image:url(images/speaker/jacky.jpg);")
-					h4.title Jacky810124
-					p.text 
-						| 好想工作室 - 前端 mentor
-					.info
-						a(href="https://www.facebook.com/jacky810124",target="_blank") Facebook
-			li.col-lg-4.col-md-4.col-sm-6.col-xs-12
-				.card
-					.pic(style="background-image:url(images/speaker/jerryHong.jpg);")
-					h4.title Jerry Hong
-					p.text 
-						| 第8屆 iT 邦幫忙鐵人賽 Modern Web 組冠軍 - 30 天精通 RxJS，默默無名的少年魔法師，常出現在魔法師大會中，專注於前端的相關法術默默無名的少年魔法師，常出現在魔法師大會中，專注於前端的相關法術。
-					.info
-						a(href="https://www.jerry-hong.com/",target="_blank") Website
-						a(href="http://ithelp.ithome.com.tw/users/20103367/ironman/1199",target="_blank") iT 鐵人賽
-			li.col-lg-4.col-md-4.col-sm-6.col-xs-12
-				.card
-					.pic(style="background-image:url(images/speaker/lockChou.jpg);")
-					h4.title Lock Chou
-					p.text 
-						| 高雄人，十年前端工程師，寄此身於 KKBOX 南部辦公室。 追求微小而確定的使用者互動，以改善使用者體驗為職志。
-					.info
-						a(href="https://www.linkedin.com/in/lock-chou-b248523a",target="_blank") Linkedin
-			li.col-lg-4.col-md-4.col-sm-6.col-xs-12
-				.card
-					.pic(style="background-image:url(images/speaker/martyHsu.jpg);")
-					h4.title Marty
-					p.text 
-						| 慶奇科技創辦人，參與 Webduino 開源專案開發。
-					.info
-						a(href="https://webduino.io",target="_blank") Website
+	include ./layout/_speaker.jade
 
 	//- 協辦單位
 	include ./layout/_coorganizer.jade
 
 	//- 詳細資訊
+	//- include ./layout/_detail.jade
 	section.detail
 		.tab.yellowDeco
 			.tab_h1 詳細資訊
@@ -190,16 +139,48 @@ block content
 							| 高捷後驛站二號出口有公共自行車租賃系統，可憑信用卡或一卡通租借自行車騎乘前往，騎乘大約5分鐘
 			.detailMap.col-lg-8.col-md-8.col-sm-12.col-xs-12
 				iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117864.1205277871!2d120.27714099999999!3d22.606997000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04e515635045%3A0x4b611602b5a52af1!2zODA35Y-w54Gj6auY6ZuE5biC5LiJ5rCR5Y2A5Y2B5YWo5LiA6LevMTAw6Jmf!5e0!3m2!1szh-TW!2sus!4v1489664739901" width="100%" height="800" frameborder="0" style="border:0")
+
+	section.liveBroadcast
+		.about
+			p 
+				b
+					| 本次直播由史瓦特多媒體專業團隊提供
+			p 
+				| FULL HD 專業攝影機 x 3, FULL HD 數位導播機 x 1,
+			p
+				| 並使用中華電信專線確保直播品質
+
+	
+	//- footer
+	//- include ./layout/_footer.jade
 	section.footer
+		//- //- A
+		//- .figure.figure-star-02.flare-01.figure-positionA-01.figure-m
+		//- .figure.figure-star-09.hop-01.figure-positionA-02.figure-xs
+		//- .figure.figure-star-01.figure-positionA-03.figure-l
+		//- .figure.figure-star-04.hop-01.figure-positionA-04.figure-xs
+		//- .figure.figure-star-07.flare-01.figure-positionA-05.figure-xs
+		//- .figure.figure-star-05.shiny-01.figure-positionA-06.figure-xs			
+		//- //- B
+		//- .figure.figure-star-01.flare-01.figure-positionB-01.figure-m
+		//- .figure.figure-star-05.hop-01.figure-positionB-02.figure-s
+		//- .figure.figure-star-03.hop-01.figure-positionB-03.figure-s
+		//- .figure.figure-star-09.figure-positionB-04.figure-xs
+		//- .figure.figure-star-08.flare-01.figure-positionB-05.figure-xs
+		//- //- C
+		//- .figure.figure-star-01.hop-01.figure-positionC-01.figure-l
+		//- .figure.figure-star-07.shiny-01.figure-positionC-02.figure-xs
+		//- .figure.figure-star-02.hop-02.figure-positionC-03.figure-s
+		//- .figure.figure-star-03.flare-02.figure-positionC-04.figure-xl
+		//- .figure.figure-star-04.hop-01.figure-positionC-05.figure-m
+		//- .figure.figure-star-08.flare-01.figure-positionC-06.figure-xs
+		//- //- D
+		//- .figure.figure-star-02.hop-01.figure-positionD-01.figure-m
+		//- .figure.figure-star-03.hop-01.figure-positionD-02.figure-m
+		//- .figure.figure-star-09.figure-positionD-03.figure-xs
 		.figure.figure-planet-03
 		.figure.figure-planet-05
 		.footerContent
-			.about
-				p 
-					b
-						| 全程高規格線上直播
-				p 
-					|現場不夠過癮，回去還可以再看錄影!
 			a.btn.btn-primary.is-muted(href="#",title="KKTIX 售票系統") KKTIX 售票系統
 			p.info -活動尚未開始-
 			.footerContent_contact

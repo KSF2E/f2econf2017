@@ -1,11 +1,9 @@
 .about{
-	position: relative;
-	z-index: 1;
-	font-family: "GenJyuuGothicX-Bold";
+	font-family: 'GenJyuuGothicX-Medium','cwTeXYen',$font-family-base;
 	max-width: 960px;
 	margin:0 auto;
 	text-align: center;
-	color: $colorSubFirst;
+	color: $colorMainFirst-light;
 	font-size:1.8em;
 	padding: 40px 4%;
 	b{
