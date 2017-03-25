@@ -1,13 +1,23 @@
-.about{
-	font-family: 'GenJyuuGothicX-Medium','cwTeXYen',$font-family-base;
-	max-width: 960px;
-	margin:0 auto;
-	text-align: center;
-	color: $colorMainFirst-light;
-	font-size:1.8em;
-	padding: 40px 4%;
-	b{
-		color:$colorMainSecond;
-	}
-
+.about {
+    font-family: 'GenJyuuGothicX-Medium', 'cwTeXYen', $font-family-base;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    color: $colorMainFirst-light;
+    font-size: 1.8em;
+    @include mobile() {
+        font-size: 1.6em;
+    }
+    padding: 40px 4%;
+    b {
+        color: $colorMainSecond;
+    }
+    span.br {
+        @include pad-below () {
+            display: block;
+        }
+        @include mobile() {
+            display: block;
+        }
+    }
 }
