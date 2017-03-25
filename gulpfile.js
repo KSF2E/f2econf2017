@@ -62,8 +62,8 @@ gulp.task('scss', function() {
         }))
         .pipe($.sourcemaps.init())
         .pipe($.sass({
-            // outputStyle: 'compressed',
-            outputStyle: 'expanded',
+            outputStyle: 'compressed',
+            // outputStyle: 'expanded',
             includePaths: [path.bower + 'bootstrap-sass/assets/stylesheets']
         }).on('error', $.sass.logError))
         .pipe($.postcss(processors))
