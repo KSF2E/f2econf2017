@@ -8277,13 +8277,24 @@ ul.detailContent_list li:before {
   cursor: pointer;
 }
 
-.detailplace_tab li.is-active {
+.detailplace_tab li.is-active, .detailplace_tab li:hover, .detailplace_tab li:focus, .detailplace_tab li:active, .detailplace_tab li:active:focus {
   background-color: #f3f3f3;
 }
 
+.insideInfo {
+  padding: 0 4%;
+  height: 710px;
+  overflow: auto;
+  width: 100%;
+}
+
+.insideInfo .text {
+  padding: 0;
+}
+
 @media (max-width: 480px) {
-  .detailplace_Map {
-    display: none;
+  .insideInfo {
+    height: 500px;
   }
 }
 
