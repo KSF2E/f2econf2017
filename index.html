@@ -17,15 +17,15 @@
   </head>
   <body>
     <div class="wrapper">
-      <section class="star">
+      <section class="figureOuter">
         <div class="figure figure-earth"></div>
         <div class="figure figure-planet-01"></div>
         <div class="figure figure-planet-02"></div>
         <div class="figure figure-comet"></div>
         <div class="figure figure-star-02 flare-01 figure-positionA-01 figure-m"></div>
+        <div class="figure figure-star-05 shiny-01 figure-positionA-02 figure-xs"></div>
         <div class="figure figure-star-01 figure-positionA-03 figure-l"></div>
         <div class="figure figure-star-09 flare-01 figure-positionA-04 figure-xs"></div>
-        <div class="figure figure-star-05 shiny-01 figure-positionA-02 figure-xs">			</div>
         <div class="figure figure-star-01 flare-01 figure-positionB-01 figure-m"></div>
         <div class="figure figure-star-05 hop-01 figure-positionB-02 figure-s"></div>
         <div class="figure figure-star-09 figure-positionB-03 figure-xs"></div>
@@ -62,7 +62,7 @@
             </li>
             <li>
               <div class="issueTime">09:10</div>
-              <h4 class="issueTopic">十年一覺前端夢<i class="fa fa-angle-down"></i></h4>
+              <h4 class="issueTopic">十年一覺前端夢<span class="issueMore"><i class="fa fa-angle-up"></i></span></h4>
               <div class="issueDetail">
                 <div class="issueSpeak"><span>講者</span><span>Lock Chou</span></div>
                 <div class="issueTopicIntro">
@@ -79,7 +79,7 @@
             </li>
             <li>
               <div class="issueTime">11:10</div>
-              <h4 class="issueTopic">用 RxJS 寫出可讀的程式碼</h4>
+              <h4 class="issueTopic">用 RxJS 寫出可讀的程式碼<span class="issueMore"><i class="fa fa-angle-up"></i></span></h4>
               <div class="issueDetail">
                 <div class="issueSpeak"><span>講者</span><span>Jerry Hong</span></div>
                 <div class="issueTopicIntro">
@@ -94,7 +94,7 @@
             </li>
             <li>
               <div class="issueTime">11:10</div>
-              <h4 class="issueTopic">前端團隊奴的日常</h4>
+              <h4 class="issueTopic">前端團隊奴的日常<span class="issueMore"><i class="fa fa-angle-up"></i></span></h4>
               <div class="issueDetail">
                 <div class="issueSpeak"><span>講者</span><span>Aaron (小狂)</span></div>
                 <div class="issueTopicIntro">談前端部門的管理與經營，從技術導入、尋才面試、規範制定、教育訓練到建立文化，以Developer的立場去理解成員的心境和處境，不只要面對程式碼，更要面對不同角色間的溝通與磨合。從只有三名前端工程師發展成十人以上的前端團隊，一睹從百廢俱興到穩定發展的進化史。</div>
@@ -106,7 +106,7 @@
             </li>
             <li>
               <div class="issueTime">13:30</div>
-              <h4 class="issueTopic">Vue isomorphic</h4>
+              <h4 class="issueTopic">Vue isomorphic<span class="issueMore"><i class="fa fa-angle-up"></i></span></h4>
               <div class="issueDetail">
                 <div class="issueSpeak"><span>講者</span><span>Jacky810124</span></div>
                 <div class="issueTopicIntro">Isomorphic （同構）讓前端和後端都使用同一份程式碼，聽起來好像不錯，到底有沒有這麼神？到底該如何做？這次透過 Vue 來讓大家搞懂什麼是 Isomorphic 。</div>
@@ -118,7 +118,7 @@
             </li>
             <li> 
               <div class="issueTime">14:30</div>
-              <h4 class="issueTopic">Google Blockly 積木大解密</h4>
+              <h4 class="issueTopic">Google Blockly 積木大解密<span class="issueMore"><i class="fa fa-angle-up"></i></span></h4>
               <div class="issueDetail">
                 <div class="issueSpeak"><span>講者</span><span>Marty</span></div>
                 <div class="issueTopicIntro">Google Blockly積木式編程，大幅度的降低了程式設計入學門檻，相信大家都很好奇 Blockly 是如何藉由封裝實作細節，又能充分滿足擴充的需要 ! 講題將以 Webduino Blockly 為例，剖析我們如何自訂積木，甚至一步步改造 Blockly，成為 開發 IoT 的利器 ^^</div>
@@ -130,7 +130,7 @@
             </li>
             <li> 
               <div class="issueTime">15:50</div>
-              <h4 class="issueTopic">網站規劃流程二三事</h4>
+              <h4 class="issueTopic">網站規劃流程二三事<span class="issueMore"><i class="fa fa-angle-up"></i></span></h4>
               <div class="issueDetail">
                 <div class="issueSpeak"><span>講者</span><span>Hsiang</span></div>
                 <div class="issueTopicIntro">本議程將會分享規劃網站的流程，從網站規劃與發想、UI 設計、前後端開發、部屬整合等相關議題，同時也會介紹數種前後端輔助工具，加速開發效率。</div>
@@ -218,6 +218,7 @@
           </li>
         </ul>
       </section>
+      <section class="sponsor"></section>
       <section class="coorganizer">
         <div class="tab pinkDeco"> 
           <div class="tab_h1">協辦單位</div>
@@ -266,17 +267,31 @@
       </section>
       <section class="liveBroadcast">
         <div class="about">
-          <p> <b>本次直播由史瓦特多媒體專業團隊提供</b></p>
-          <p>
-             
-            FULL HD 專業攝影機 x 3, FULL HD 數位導播機 x 1,
-          </p>
-          <p>並使用中華電信專線確保直播品質</p>
+          <p>本次直播由史瓦特多媒體專業團隊提供</p>
+          <p><b>FULL HD 專業攝影機 x 3, FULL HD 數位導播機 x 1,</b></p>
+          <p><b>並使用中華電信專線確保直播品質</b></p>
         </div>
       </section>
       <section class="footer">
-        <div class="figure figure-planet-03"></div>
-        <div class="figure figure-plant-05"></div>
+        <div class="footer_figureOuter">
+          <div class="figure figure-star-01 flare-01 figure-positionA-05 figure-m"></div>
+          <div class="figure figure-star-03 figure-positionA-06 figure-l"></div>
+          <div class="figure figure-star-07 flare-01 figure-positionA-07 figure-xs"></div>
+          <div class="figure figure-star-04 shiny-01 figure-positionA-08 figure-xs">			</div>
+          <div class="figure figure-star-01 flare-01 figure-positionB-05 figure-m"></div>
+          <div class="figure figure-star-06 shiny-01 hop-01 figure-positionB-06 figure-s"></div>
+          <div class="figure figure-star-02 figure-positionB-07 figure-m"></div>
+          <div class="figure figure-star-09 flare-01 figure-positionB-08 figure-xs"></div>
+          <div class="figure figure-star-01 hop-01 figure-positionC-06 figure-l"></div>
+          <div class="figure figure-star-09 shiny-01 figure-positionC-07 figure-xs"></div>
+          <div class="figure figure-star-02 hop-02 figure-positionC-08 figure-s"></div>
+          <div class="figure figure-star-03 hop-01 figure-positionD-04 figure-m"></div>
+          <div class="figure figure-star-04 hop-01 figure-positionD-05 figure-m"></div>
+          <div class="figure figure-star-08 figure-positionD-06 figure-xs"></div>
+          <div class="figure figure-star-04 figure-positionD-07 figure-s"></div>
+          <div class="figure figure-planet-03"></div>
+          <div class="figure figure-planet-05"></div>
+        </div>
         <div class="footerContent"><a href="http://gonsakon-7655f2.kktix.cc/events/ksf2e" title="KKTIX 售票系統" target="_blank" class="btn btn-primary is-muted">KKTIX 售票系統</a>
           <p class="info">-活動尚未開始-</p>
           <div class="footerContent_contact"><img src="images/logo/logo.png"><a herf="#" class="fa fa-facebook-square fa-lg"></a><a herf="#" class="fa fa-comments fa-lg"></a>
