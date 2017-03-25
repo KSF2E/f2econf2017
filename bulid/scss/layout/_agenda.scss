@@ -62,23 +62,26 @@
     display: inline-block;
     color: $colorMainFirst;
     position: relative;
-    width: 88%;
     margin: 5px 0;
     font-weight: bold;
     line-height: 1.6;
+    width: 88%;
     @include pad-below () {
         width: 75%;
     }
     @include mobile () {
         width: 60%;
     }
+    i.fa {
+        margin-left: 10px;
+    }
 }
 
 .issueDetail {
     position: relative;
     display: inline-block;
-    width: 88%;
     margin-left: 90px;
+    width: 88%;
     @include pad-below () {
         width: 75%;
     }
