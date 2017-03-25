@@ -8018,17 +8018,41 @@ p.info {
   display: inline-block;
   color: #2a1672;
   position: relative;
-  width: 60%;
+  width: 88%;
   margin: 5px 0;
   font-weight: bold;
   line-height: 1.6;
 }
 
+@media (max-width: 767px) {
+  .issueTopic {
+    width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  .issueTopic {
+    width: 60%;
+  }
+}
+
 .issueDetail {
   position: relative;
   display: inline-block;
-  width: 60%;
+  width: 88%;
   margin-left: 90px;
+}
+
+@media (max-width: 767px) {
+  .issueDetail {
+    width: 75%;
+  }
+}
+
+@media (max-width: 480px) {
+  .issueDetail {
+    width: 68%;
+  }
 }
 
 .issueSpeak span {
@@ -8044,6 +8068,11 @@ p.info {
   border: 1px solid #ff4f94;
   background: #ff4f94;
   color: #fff;
+}
+
+.issueTopicIntro {
+  margin-top: 10px;
+  text-align: justify;
 }
 
 .speaker {
