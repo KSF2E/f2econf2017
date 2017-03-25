@@ -7784,6 +7784,16 @@ a {
   transition: all, 0.3s, ease-in-out;
 }
 
+* ::-moz-selection {
+  background-color: #ffdf3c;
+  color: #fff;
+}
+
+* ::selection {
+  background-color: #ffdf3c;
+  color: #fff;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -7941,18 +7951,9 @@ p.info {
   margin-top: 15vh;
 }
 
-.agenda ::-moz-selection {
-  background-color: #ffdf3c;
-  color: #fff;
-}
-
-.agenda ::selection {
-  background-color: #ffdf3c;
-  color: #fff;
-}
-
 .agenda-panel {
   padding: 30px 0;
+  overflow: hidden;
   -webkit-box-shadow: 0 0 10px 0 rgba(42, 22, 144, 0.8);
           box-shadow: 0 0 10px 0 rgba(42, 22, 144, 0.8);
 }
@@ -7963,27 +7964,71 @@ p.info {
 
 .agendaContent {
   margin-top: 60px;
-  padding: 5px 4%;
+  padding: 0 4%;
+  margin-bottom: 0;
 }
 
 .agendaContent li {
+  position: relative;
   padding: 5px 0;
 }
 
-.issueTopic {
-  color: #2a1672;
+.agendaContent li:before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  border-left: 2px solid #ffdf3c;
+  position: absolute;
+  z-index: -1;
+  left: 64px;
 }
 
-.issueTopic:before {
+.agendaContent li:first-child:before {
+  top: 22px;
+}
+
+.agendaContent li:last-child:before {
+  bottom: -30px;
+}
+
+.issueTime {
+  color: #2a1672;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin: 5px 0;
+  width: 86px;
+  height: 28px;
+  line-height: 28px;
+}
+
+.issueTime:after {
   content: '';
   background: #ff4f94;
   width: 12px;
   height: 12px;
   display: inline-block;
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 0 14px 0 20px;
   -webkit-box-shadow: 0 0 10px 0 rgba(255, 80, 150, 0.8);
           box-shadow: 0 0 10px 0 rgba(255, 80, 150, 0.8);
+}
+
+.issueTopic {
+  display: inline-block;
+  color: #2a1672;
+  position: relative;
+  width: 60%;
+  margin: 5px 0;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.issueDetail {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  margin-left: 90px;
 }
 
 .issueSpeak span {
@@ -8915,6 +8960,7 @@ ul.detailContent_list li:before {
 
 .tab_h1 {
   font-size: 4rem;
+  font-weight: bold;
 }
 
 .tab_sub {
