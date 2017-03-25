@@ -35,6 +35,11 @@
             bottom: -30px;
         }
     }
+    span.issueMore {
+        margin-left: 8px;
+        color: $colorMainFirst-light;
+        cursor: pointer;
+    }
 }
 
 .issueTime {
@@ -65,15 +70,12 @@
     margin: 5px 0;
     font-weight: bold;
     line-height: 1.6;
-    width: 88%;
+    width: 86%;
     @include pad-below () {
         width: 75%;
     }
     @include mobile () {
         width: 60%;
-    }
-    i.fa {
-        margin-left: 10px;
     }
 }
 

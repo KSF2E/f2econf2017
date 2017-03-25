@@ -37,15 +37,40 @@
     }
 }
 
-.figure-positionA-07 {
+.figure-positionA-05 {
     top: 2%;
-    right: 5%;
+    right: 35%;
+    opacity: .3;
+    @include mobile () {
+        right: 6%;
+    }
+}
+
+.figure-positionA-06 {
+    top: 20%;
+    right: 20%;
+    opacity: .3;
+    @include mobile () {
+        display: none;
+    }
+}
+
+.figure-positionA-07 {
+    top: 34%;
+    right: 25%;
+    opacity: .3;
+    @include mobile () {
+        right: 35%;
+    }
 }
 
 .figure-positionA-08 {
-    top: 10%;
-    right: 40%;
+    top: 15%;
+    right: 15%;
     opacity: .3;
+    @include mobile () {
+        display: none;
+    }
 }
 
 // B
@@ -88,9 +113,36 @@
 }
 
 .figure-positionB-05 {
-    bottom: 5%;
+    bottom: 15%;
+    right: 15%;
+    opacity: .3;
+}
+
+.figure-positionB-06 {
+    bottom: 30%;
+    right: 18%;
+    opacity: .2;
+    @include mobile () {
+        right: 10%;
+    }
+}
+
+.figure-positionB-07 {
+    bottom: 45%;
+    right: 30%;
+    opacity: .7;
+    @include mobile () {
+        right: 25%;
+    }
+}
+
+.figure-positionB-08 {
+    bottom: 15%;
     right: 25%;
     opacity: .7;
+    @include mobile () {
+        display: none;
+    }
 }
 
 // C
@@ -129,7 +181,37 @@
 .figure-positionC-05 {
     bottom: 8%;
     left: 15%;
-    opacity: .6;
+    opacity: .2;
+}
+
+.figure-positionC-06 {
+    bottom: 23%;
+    left: 20%;
+    opacity: .5;
+    @include mobile () {
+        bottom: 47%;
+        left: 27%;
+        opacity: .3;
+    }
+}
+
+.figure-positionC-07 {
+    bottom: 5%;
+    left: 25%;
+    opacity: .3;
+    @include mobile () {
+        bottom: 15%;
+        left: 20%;
+    }
+}
+
+.figure-positionC-08 {
+    bottom: 8%;
+    left: 15%;
+    opacity: .2;
+    @include mobile () {
+        display: none;
+    }
 }
 
 // D
@@ -159,6 +241,42 @@
     @include mobile () {
         display: none;
     }
+}
+
+.figure-positionD-04 {
+    top: 10%;
+    left: 8%;
+    @include mobile () {
+        top: 37%;
+        left: 4%;
+        opacity: .1;
+    }
+}
+
+.figure-positionD-05 {
+    top: 17%;
+    left: 30%;
+    opacity: .2;
+    @include mobile () {
+        top: 9%;
+        right: 5%;
+    }
+}
+
+.figure-positionD-06 {
+    top: 35%;
+    left: 25%;
+    opacity: .5;
+    @include mobile () {
+        top: 10%;
+        left: 5%;
+    }
+}
+
+.figure-positionD-07 {
+    top: 27%;
+    left: 15%;
+    opacity: .2;
 }
 
 //

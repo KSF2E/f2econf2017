@@ -1,4 +1,4 @@
-.star {
+.figureOuter {
     display: block;
     position: fixed;
     width: 100%;
@@ -105,7 +105,7 @@
     bottom: -10%;
     opacity: .3;
     @include pad-below () {
-        max-width: 40%;
+        max-width: 25%;
     }
     @include mobile () {
         max-width: 32%;
@@ -185,9 +185,11 @@
 .figure-star-07 {
     background-image: url(../images/figure/figure-star-07.svg);
 }
+
 .figure-star-08 {
     background-image: url(../images/figure/figure-star-08.svg);
 }
+
 .figure-star-09 {
     background-image: url(../images/figure/figure-star-09.svg);
 }
@@ -216,25 +218,25 @@
 // animation
 @keyframes flare {
     0% {
-        opacity:.2;
+        opacity: .2;
     }
     33% {
-        opacity: .7;
+        opacity: .3;
     }
     100% {
-        transform: .2;
+        opacity: .1;
     }
 }
 
 @keyframes shiny {
     0% {
-        opacity:.2;
+        opacity: .2;
     }
     60% {
-        opacity: .9;
+        opacity: .5;
     }
     100% {
-        transform: .5;
+        opacity: .1;
     }
 }
 

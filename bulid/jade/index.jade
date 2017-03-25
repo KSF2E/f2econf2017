@@ -6,31 +6,7 @@ block title
 
 block header
 	//- 星背景
-	section.star
-		.figure.figure-earth
-		.figure.figure-planet-01
-		.figure.figure-planet-02
-		.figure.figure-comet
-		//- A
-		.figure.figure-star-02.flare-01.figure-positionA-01.figure-m
-		.figure.figure-star-01.figure-positionA-03.figure-l
-		.figure.figure-star-09.flare-01.figure-positionA-04.figure-xs
-		.figure.figure-star-05.shiny-01.figure-positionA-02.figure-xs			
-		//- B
-		.figure.figure-star-01.flare-01.figure-positionB-01.figure-m
-		.figure.figure-star-05.hop-01.figure-positionB-02.figure-s
-		.figure.figure-star-09.figure-positionB-03.figure-xs
-		.figure.figure-star-07.flare-01.figure-positionB-04.figure-xs
-		//- C
-		.figure.figure-star-01.hop-01.figure-positionC-01.figure-l
-		.figure.figure-star-08.shiny-01.figure-positionC-02.figure-xs
-		.figure.figure-star-02.hop-02.figure-positionC-03.figure-s
-		.figure.figure-star-03.flare-02.figure-positionC-04.figure-xl
-		.figure.figure-star-04.hop-01.figure-positionC-05.figure-m
-		//- D
-		.figure.figure-star-02.hop-01.figure-positionD-01.figure-m
-		.figure.figure-star-04.hop-01.figure-positionD-02.figure-m
-		.figure.figure-star-09.figure-positionD-03.figure-xs
+	include ./bg/_figureOuter.jade
 
 	//- 導航
 	//- nav
@@ -62,7 +38,8 @@ block header
 				li
 					.issueTime 09:10
 					h4.issueTopic 十年一覺前端夢
-						i.fa.fa-angle-down
+						span.issueMore
+							i.fa.fa-angle-up
 					.issueDetail
 						.issueSpeak
 							span 講者
@@ -78,6 +55,8 @@ block header
 				li
 					.issueTime 11:10
 					h4.issueTopic 用 RxJS 寫出可讀的程式碼
+						span.issueMore
+							i.fa.fa-angle-up
 					.issueDetail
 						.issueSpeak
 							span 講者
@@ -91,6 +70,8 @@ block header
 				li
 					.issueTime 11:10
 					h4.issueTopic 前端團隊奴的日常
+						span.issueMore
+							i.fa.fa-angle-up
 					.issueDetail
 						.issueSpeak
 							span 講者
@@ -103,6 +84,8 @@ block header
 				li
 					.issueTime 13:30
 					h4.issueTopic Vue isomorphic
+						span.issueMore
+							i.fa.fa-angle-up
 					.issueDetail
 						.issueSpeak
 							span 講者
@@ -115,6 +98,8 @@ block header
 				li 
 					.issueTime 14:30
 					h4.issueTopic Google Blockly 積木大解密
+						span.issueMore
+							i.fa.fa-angle-up
 					.issueDetail
 						.issueSpeak
 							span 講者
@@ -127,6 +112,8 @@ block header
 				li 
 					.issueTime 15:50
 					h4.issueTopic 網站規劃流程二三事
+						span.issueMore
+							i.fa.fa-angle-up
 					.issueDetail
 						.issueSpeak
 							span 講者
@@ -141,6 +128,9 @@ block content
 	//- 講者
 	include ./layout/_speaker.jade
 
+	//- 講者
+	section.sponsor
+	
 	//- 協辦單位
 	include ./layout/_coorganizer.jade
 
@@ -187,44 +177,20 @@ block content
 
 	section.liveBroadcast
 		.about
-			p 
-				b
-					| 本次直播由史瓦特多媒體專業團隊提供
-			p 
-				| FULL HD 專業攝影機 x 3, FULL HD 數位導播機 x 1,
 			p
-				| 並使用中華電信專線確保直播品質
+				| 本次直播由史瓦特多媒體專業團隊提供
+			p
+				b
+					| FULL HD 專業攝影機 x 3, FULL HD 數位導播機 x 1,
+			p
+				b
+					| 並使用中華電信專線確保直播品質
 
 	
 	//- footer
-	//- include ./layout/_footer.jade
 	section.footer
-		//- //- A
-		//- .figure.figure-star-02.flare-01.figure-positionA-01.figure-m
-		//- .figure.figure-star-09.hop-01.figure-positionA-02.figure-xs
-		//- .figure.figure-star-01.figure-positionA-03.figure-l
-		//- .figure.figure-star-04.hop-01.figure-positionA-04.figure-xs
-		//- .figure.figure-star-07.flare-01.figure-positionA-05.figure-xs
-		//- .figure.figure-star-05.shiny-01.figure-positionA-06.figure-xs			
-		//- //- B
-		//- .figure.figure-star-01.flare-01.figure-positionB-01.figure-m
-		//- .figure.figure-star-05.hop-01.figure-positionB-02.figure-s
-		//- .figure.figure-star-03.hop-01.figure-positionB-03.figure-s
-		//- .figure.figure-star-09.figure-positionB-04.figure-xs
-		//- .figure.figure-star-08.flare-01.figure-positionB-05.figure-xs
-		//- //- C
-		//- .figure.figure-star-01.hop-01.figure-positionC-01.figure-l
-		//- .figure.figure-star-07.shiny-01.figure-positionC-02.figure-xs
-		//- .figure.figure-star-02.hop-02.figure-positionC-03.figure-s
-		//- .figure.figure-star-03.flare-02.figure-positionC-04.figure-xl
-		//- .figure.figure-star-04.hop-01.figure-positionC-05.figure-m
-		//- .figure.figure-star-08.flare-01.figure-positionC-06.figure-xs
-		//- //- D
-		//- .figure.figure-star-02.hop-01.figure-positionD-01.figure-m
-		//- .figure.figure-star-03.hop-01.figure-positionD-02.figure-m
-		//- .figure.figure-star-09.figure-positionD-03.figure-xs
-		.figure.figure-planet-03
-		.figure.figure-plant-05
+		//- 星背景
+		include ./bg/_footerfigureOuter.jade
 		.footerContent
 			a.btn.btn-primary.is-muted(href="http://gonsakon-7655f2.kktix.cc/events/ksf2e",title="KKTIX 售票系統",target="_blank") KKTIX 售票系統
 			p.info -活動尚未開始-
