@@ -87,6 +87,8 @@ ul.detailContent_list {
         border-left: none;
     }
     @include mobile () {
+
+        border-top: 1px solid $colorGray-light;
         border-left: none;
     }
 }
@@ -98,7 +100,6 @@ ul.detailContent_list {
         float: left;
         cursor: pointer;
         &.is-active,
-        &:hover,
         &:focus,
         &:active,
         &:active:focus {
