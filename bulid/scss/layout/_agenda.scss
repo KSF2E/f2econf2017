@@ -62,17 +62,29 @@
     display: inline-block;
     color: $colorMainFirst;
     position: relative;
-    width: 60%;
+    width: 88%;
     margin: 5px 0;
     font-weight: bold;
     line-height: 1.6;
+    @include pad-below () {
+        width: 75%;
+    }
+    @include mobile () {
+        width: 60%;
+    }
 }
 
 .issueDetail {
     position: relative;
     display: inline-block;
-    width: 60%;
+    width: 88%;
     margin-left: 90px;
+    @include pad-below () {
+        width: 75%;
+    }
+    @include mobile () {
+        width: 68%;
+    }
 }
 
 .issueSpeak {
@@ -88,4 +100,9 @@
             color: #fff;
         }
     }
+}
+
+.issueTopicIntro {
+    margin-top: 10px;
+    text-align: justify;
 }
