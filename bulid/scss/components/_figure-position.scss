@@ -245,7 +245,8 @@
 
 .figure-positionD-04 {
     top: 10%;
-    left: 8%;
+    left: 8%; 
+    opacity: .3;
     @include mobile () {
         top: 37%;
         left: 4%;
