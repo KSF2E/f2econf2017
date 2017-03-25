@@ -108,20 +108,24 @@ ul.detailContent_list {
 }
 
 .placeMap {
-    @include mobile() {
-       
-    }
+    @include mobile() {}
 }
 
 .insideInfo {
-    padding: 0 4%;
+    padding: 0 4% 10px;
     height: 710px;
     overflow: auto;
     width: 100%;
-    .text{
+    .text {
         padding: 0;
     }
-        @include mobile () {
-        height: 500px;
+    @include pad () {
+        height: inherit;
+    }
+    @include pad-below () {
+        height: inherit;
+    }
+    @include mobile () {
+        height: inherit;
     }
 }
