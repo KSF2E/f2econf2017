@@ -8282,7 +8282,7 @@ ul.detailContent_list li:before {
 }
 
 .insideInfo {
-  padding: 0 4%;
+  padding: 0 4% 10px;
   height: 710px;
   overflow: auto;
   width: 100%;
@@ -8292,9 +8292,21 @@ ul.detailContent_list li:before {
   padding: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .insideInfo {
+    height: inherit;
+  }
+}
+
+@media (max-width: 767px) {
+  .insideInfo {
+    height: inherit;
+  }
+}
+
 @media (max-width: 480px) {
   .insideInfo {
-    height: 500px;
+    height: inherit;
   }
 }
 
