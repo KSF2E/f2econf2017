@@ -97,15 +97,31 @@ ul.detailContent_list {
         width: 50%;
         float: left;
         cursor: pointer;
-        &.is-active {
+        &.is-active,
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:focus {
             background-color: #f3f3f3;
         }
     }
 }
 
-.detailplace_Map {
-    // margin-bottom: -5px;
+.placeMap {
     @include mobile() {
-        display: none;
+       
+    }
+}
+
+.insideInfo {
+    padding: 0 4%;
+    height: 710px;
+    overflow: auto;
+    width: 100%;
+    .text{
+        padding: 0;
+    }
+        @include mobile () {
+        height: 500px;
     }
 }

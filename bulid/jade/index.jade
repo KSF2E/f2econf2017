@@ -12,8 +12,8 @@ block header
 	section.header.text-center
 		.header_mainVisual
 			.mainVisualPic
-		a.btn.btn-primary(href="http://gonsakon-7655f2.kktix.cc/events/ksf2e",title="KKTIX 售票系統",target="_blank") KKTIX 售票系統
-		p.info -活動尚未開始-
+		a.btn.btn-primary(href="http://gonsakon-7655f2.kktix.cc/events/ksf2e",title="KKTIX 售票系統",target="_blank") 熱烈報名中
+		//- p.info -活動尚未開始-
 
 	//- 議程
 	section.agenda
@@ -166,18 +166,19 @@ block content
 						li
 							| 高捷後驛站二號出口有公共自行車租賃系統，可憑信用卡或一卡通租借自行車騎乘前往，騎乘大約5分鐘
 			.detailplace.col-lg-8.col-md-8.col-sm-12.col-xs-12
-				//- ul.detailplace_tab
-				//- 	li.is-active
-				//- 		h4.title 會場位置
-				//- 	li 
-				//- 		h4.title 場地環境資訊
-				.detailplace_Map
-					iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.191	1157403365!2d120.30858246496095!3d22.64666193514477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04e56681aad1%3A0xdb131dcc46ce82dd!2zODA36auY6ZuE5biC5LiJ5rCR5Y2A5ZyL6Zqb5a246KGT56CU56m25aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1490421192408" width="100%" height="800" frameborder="0" style="border:0")
-				//- .detailplace_info
-				//- 	h4.text 高醫國際會議中心 國際學術研究大樓B2 A廳
-				//- 	.pic(style="background-image:url(images/speaker/hsiang.jpg);")
-
-
+				ul.detailplace_tab
+					li
+						h4.title 會場位置
+					li.is-active 
+						h4.title 場地環境資訊
+				.detailplace_info
+					.placeMap.hide
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.191	1157403365!2d120.30858246496095!3d22.64666193514477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04e56681aad1%3A0xdb131dcc46ce82dd!2zODA36auY6ZuE5biC5LiJ5rCR5Y2A5ZyL6Zqb5a246KGT56CU56m25aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1490421192408" width="100%" height="710" frameborder="0" style="border:0")
+					.insideInfo
+						h4.text 高醫國際會議中心 國際學術研究大樓B2 A廳
+						.pic(style="background-image:url(images/place/place_01.jpg);")
+						br
+						| 寬敞的議會空間，高負載量的WIFI、580人獨立座位、單槍投影機*3台及提問麥克風*294支，一切的安排只希望議程能有最好的品質。
 	section.liveBroadcast
 		.about
 			p
@@ -194,8 +195,8 @@ block content
 		//- 星背景
 		include ./bg/_footerfigureOuter.jade
 		.footerContent
-			a.btn.btn-primary.is-muted(href="http://gonsakon-7655f2.kktix.cc/events/ksf2e",title="KKTIX 售票系統",target="_blank") KKTIX 售票系統
-			p.info -活動尚未開始-
+			a.btn.btn-primary.is-muted(href="http://gonsakon-7655f2.kktix.cc/events/ksf2e",title="KKTIX 售票系統",target="_blank") 熱烈報名中
+			//- p.info -活動尚未開始-
 			.footerContent_contact
 				img(src="images/logo/logo.png")
 				a(herf="#").fa.fa-facebook-square.fa-lg
