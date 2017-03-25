@@ -8156,6 +8156,7 @@ p.info {
 
 .detail {
   background: #ff4f94;
+  color: #2a1672;
   position: relative;
   z-index: 1;
   padding: 10vh 4%;
@@ -8174,10 +8175,41 @@ p.info {
   background: #ffdf3c;
 }
 
+.detail-panel h4 {
+  line-height: 1.4;
+}
+
+.detail-panel .title {
+  color: #ff4f94;
+}
+
+.detail-panel a.info {
+  margin-bottom: 15px;
+  font-size: 0.85714rem;
+}
+
+.detail-panel a.info i {
+  color: #ff4f94;
+}
+
+.detail-panel .title,
+.detail-panel .text,
+.detail-panel .info {
+  padding: 0 4%;
+}
+
+.detail-panel .tag {
+  font-size: 12px;
+  font-weight: 100;
+  background: #ff4f94;
+  color: #fff;
+  padding: 0 2px;
+  vertical-align: text-top;
+}
+
 .detailContent {
   padding: 0 2%;
   margin-bottom: -10px;
-  color: #2a1672 !important;
 }
 
 .detailContent li {
@@ -8190,38 +8222,6 @@ p.info {
 
 .detailContent > li:last-child {
   border-bottom: none;
-}
-
-.detailContent h4 {
-  line-height: 1.4;
-}
-
-.detailContent .title {
-  color: #ff4f94;
-}
-
-.detailContent a.info {
-  margin-bottom: 15px;
-  font-size: 0.85714rem;
-}
-
-.detailContent a.info i {
-  color: #ff4f94;
-}
-
-.detailContent .title,
-.detailContent .text,
-.detailContent .info {
-  padding: 0 4%;
-}
-
-.detailContent .tag {
-  font-size: 12px;
-  font-weight: 100;
-  background: #ff4f94;
-  color: #fff;
-  padding: 0 2px;
-  vertical-align: text-top;
 }
 
 ul.detailContent_list {
@@ -8246,14 +8246,43 @@ ul.detailContent_list li:before {
           box-shadow: 0 0 10px 0 rgba(255, 80, 150, 0.8);
 }
 
-.detailMap {
+.detailplace {
   padding: 0;
-  margin-bottom: -5px;
   border-left: 1px solid #ff4f94;
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .detailplace {
+    border-top: 1px dotted #9B9B9B;
+    border-left: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .detailplace {
+    border-left: none;
+  }
+}
+
 @media (max-width: 480px) {
-  .detailMap {
+  .detailplace {
+    border-left: none;
+  }
+}
+
+.detailplace_tab li {
+  background-color: #d8d8d8;
+  width: 50%;
+  float: left;
+  cursor: pointer;
+}
+
+.detailplace_tab li.is-active {
+  background-color: #f3f3f3;
+}
+
+@media (max-width: 480px) {
+  .detailplace_Map {
     display: none;
   }
 }
@@ -8999,6 +9028,7 @@ ul.detailContent_list li:before {
 .figure-positionD-04 {
   top: 10%;
   left: 8%;
+  opacity: .3;
 }
 
 @media (max-width: 480px) {
