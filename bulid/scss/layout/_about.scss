@@ -1,14 +1,11 @@
 .about {
     font-family: 'GenJyuuGothicX-Medium', 'cwTeXYen', $font-family-base;
-    max-width: 960px;
-    margin: 0 auto;
-    text-align: center;
     color: $colorMainFirst-light;
+    margin-bottom: 80px;
     font-size: 1.8em;
     @include mobile() {
         font-size: 1.6em;
     }
-    padding: 40px 4%;
     b {
         color: $colorMainSecond;
     }
@@ -19,5 +16,36 @@
         @include mobile() {
             display: block;
         }
+    }
+}
+
+.qAndA {
+    color: $colorMainFirst-light;
+}
+
+.qAndAContent {
+    float: none;
+    margin: auto;
+    margin-top: 30px;
+    font-size: $font-larger;
+    text-align: justify;
+    padding-left: 2em;
+}
+
+.qAndAContent_Q {
+    position: relative;
+    &:before {
+        content: 'Q : ';
+        left: -1.8em;
+        position: absolute;
+    }
+}
+
+.qAndAContent_A {
+    position: relative;
+    &:before {
+        content: 'A :';
+        left: -1.8em;
+        position: absolute;
     }
 }
