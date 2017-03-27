@@ -30,9 +30,7 @@
         &.is-active,
         &:hover,
         &:focus,
-        &:active,
-        &:active:focus,
-        &:link {
+        &:actives{
             color: $colorMainThird;
         }
     }
