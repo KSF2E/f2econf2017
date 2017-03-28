@@ -211,8 +211,6 @@ block content
 						| 直播早鳥票 與 直播票 有差異嗎？
 					.qAndAContent_A
 						| 早鳥票是優惠價格，兩者無其他差異。
-
-	
 	//- footer
 	section.footer
 		//- 星背景
@@ -222,10 +220,14 @@ block content
 			//- p.info -活動尚未開始-
 			.footerContent_contact
 				img(src="images/logo/logo.png")
-				a(href="https://www.facebook.com/groups/358503154261390/",title=" 高雄前端社群",target="_blank").fa.fa-facebook-square.fa-lg
-				a(href="https://www.facebook.com/messages/t/608977889251528",target="_blank").fa.fa-comments.fa-lg
+				a(href="https://www.facebook.com/groups/358503154261390/",target="_blank",title=" 高雄前端社群")
+					i.fa.fa-facebook-square.fa-lg
+				a(href="http://m.me/hexschool",target="_blank",title="Facebook 客服")
+					i.fa.fa-comments.fa-lg
 				p.info © 2017 高雄前端社群
-
+	section.floater
+		a.floater_btn(href="http://m.me/hexschool",target="_blank",title="Facebook 客服") 
+			i.fa.fa-comments.fa-lg
 block scripts
 	script(src="plugin/jquery.min.js")
 	script(src="js/all.js")
