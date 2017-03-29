@@ -8454,7 +8454,7 @@ ul.detailContent_list li:before {
 }
 
 .floater_btn {
-  color: #461d87;
+  color: #fff;
   background-color: #24ffb0;
   width: 56px;
   height: 56px;
@@ -8476,7 +8476,7 @@ ul.detailContent_list li:before {
 }
 
 .floater_btn.is-active, .floater_btn:hover, .floater_btn:focus, .floater_btn:active {
-  color: #39006c;
+  color: #fff;
   background-color: #08cd86;
 }
 
