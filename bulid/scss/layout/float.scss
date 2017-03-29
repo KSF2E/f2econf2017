@@ -6,7 +6,7 @@
 }
 
 .floater_btn {
-    color: $colorGradientFirst;
+    color: #fff;
     background-color: $colorMainFouth;
     width: 56px;
     height: 56px;
@@ -22,7 +22,7 @@
     &:hover,
     &:focus,
     &:active {
-        color: $colorSubFirst;
+        color: #fff;
         background-color: $colorMainFouth-dark;
     }
 }
