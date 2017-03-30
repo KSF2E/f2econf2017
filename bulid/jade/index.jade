@@ -213,10 +213,13 @@ block content
 						| 早鳥票是優惠價格，兩者無其他差異。
 	section.liveBroadcast
 		.container
-			.tab.pinkDeco.yellowStyle(style="padding-top: 15px; padding-bottom: 15px; margin-bottom: 30px")
+			.tab.pinkDeco.yellowStyle(style="padding: 15px; margin-bottom: 30px")
 				.tab_h1 購票
 				.tab_sub Speakers
-			iframe.kktix(src='https://kktix.com/tickets_widget?slug=ksf2e', frameborder='0', height='480', width='100%', vspace='0', hspace='0', marginheight='5', marginwidth='5', scrolling='auto', allowtransparency='true')
+			.row
+				.col-md-8.col-md-offset-2
+					div(style="padding: 0 15px; background: white;")
+						iframe.kktix(src='https://kktix.com/tickets_widget?slug=ksf2e', frameborder='0', height='480', width='100%', vspace='0', hspace='0', marginheight='5', marginwidth='5', scrolling='auto', allowtransparency='true')
 	//- footer
 	section.footer
 		//- 星背景
