@@ -1,0 +1,28 @@
+.floater {
+    bottom: 4.6875rem;
+    position: fixed;
+    z-index: 1035;
+    right: 1rem;
+}
+
+.floater_btn {
+    color: #fff;
+    background-color: $colorMainFouth;
+    width: 56px;
+    height: 56px;
+    font-size: 2em;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(70, 29, 135, 1);
+    display: flex;
+    line-height: 1.2;
+    align-items: center;
+    justify-content: center;
+    &.is-active,
+    &:hover,
+    &:focus,
+    &:active {
+        color: #fff;
+        background-color: $colorMainFouth-dark;
+    }
+}

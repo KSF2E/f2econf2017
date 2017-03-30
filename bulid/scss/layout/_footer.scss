@@ -3,21 +3,14 @@
     z-index: 1;
     margin: auto;
     text-align: center;
-    min-height: 70vh;
     overflow: hidden;
-    @include pad-below {
-        min-height: 80vh;
-    }
     background: linear-gradient(top, #461D87, #221938);
 }
 
 .footerContent {
-    position: absolute;
     z-index: 2;
+    position: relative;
     margin: auto;
-    right: 0;
-    left: 0;
-    bottom: 0;
 }
 
 .footerContent_contact {
@@ -32,14 +25,13 @@
         text-decoration: none;
         margin: 0 5px;
         vertical-align: middle;
-        font-size: 1.6em;
+        font-size: 1.4em;
         cursor: pointer;
         &.is-active,
         &:hover,
         &:focus,
         &:active,
-        &:active:focus,
-        &:link {
+        &:active:focus {
             color: $colorMainThird;
         }
     }

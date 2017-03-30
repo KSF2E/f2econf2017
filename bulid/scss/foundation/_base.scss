@@ -47,6 +47,10 @@ a {
     letter-spacing: .8px;
     line-height: 1.6;
     transition: all, 0.3s, ease-in-out;
+        ::selection{
+        background-color:$colorMainSecond;
+        color: #fff;
+    }
 }
 
 ul {

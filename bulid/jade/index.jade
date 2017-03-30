@@ -6,45 +6,14 @@ block title
 
 block header
 	//- 星背景
-	section.star
-		.figure.figure-earth
-		.figure.figure-planet-01
-		.figure.figure-planet-02
-		.figure.figure-comet
-		//- A
-		.figure.figure-star-02.flare-01.figure-positionA-01.figure-m
-		.figure.figure-star-01.figure-positionA-03.figure-l
-		.figure.figure-star-09.flare-01.figure-positionA-04.figure-xs
-		.figure.figure-star-05.shiny-01.figure-positionA-02.figure-xs			
-		//- B
-		.figure.figure-star-01.flare-01.figure-positionB-01.figure-m
-		.figure.figure-star-05.hop-01.figure-positionB-02.figure-s
-		.figure.figure-star-09.figure-positionB-03.figure-xs
-		.figure.figure-star-07.flare-01.figure-positionB-04.figure-xs
-		//- C
-		.figure.figure-star-01.hop-01.figure-positionC-01.figure-l
-		.figure.figure-star-08.shiny-01.figure-positionC-02.figure-xs
-		.figure.figure-star-02.hop-02.figure-positionC-03.figure-s
-		.figure.figure-star-03.flare-02.figure-positionC-04.figure-xl
-		.figure.figure-star-04.hop-01.figure-positionC-05.figure-m
-		//- D
-		.figure.figure-star-02.hop-01.figure-positionD-01.figure-m
-		.figure.figure-star-04.hop-01.figure-positionD-02.figure-m
-		.figure.figure-star-09.figure-positionD-03.figure-xs
-
-	//- 導航
-	//- nav
-	//- section.nav
-	//- 	ul
-	//- 		li 議程
-	//- 		li 交通資訊
+	include ./bg/_figureOuter.jade
 	
 	//- 主視覺
 	section.header.text-center
 		.header_mainVisual
 			.mainVisualPic
-		a.btn.btn-primary(href="#",title="KKTIX 售票系統") KKTIX 售票系統
-		p.info -活動尚未開始-
+		a.btn.btn-primary(href="http://gonsakon-7655f2.kktix.cc/events/ksf2e",title="KKTIX 售票系統",target="_blank") 熱烈報名中
+		//- p.info -活動尚未開始-
 
 	//- 議程
 	section.agenda
@@ -52,50 +21,109 @@ block header
 			.tab.primaryDeco 
 				.tab_h1 議程
 				.tab_sub Agenda
-			.agendaContent.text-center
-				ul
-					li
-						.issueTime
-						h4.issueTopic 十年一覺前端夢
+			ul.agendaContent
+				li
+					.issueTime  08:30
+					h4.issueTopic 開放入場
+				li
+					.issueTime  08:50
+					h4.issueTopic 開幕
+				li
+					.issueTime 09:10
+					h4.issueTopic 十年一覺前端夢
+						span.issueMore
+							i.fa.fa-angle-up
+					.issueDetail
 						.issueSpeak
 							span 講者
 							span Lock Chou
-					li
-						.issueTime 
-						h4.issueTopic 用 RxJS 寫出可讀的程式碼
+						.issueTopicIntro
+							| 十年之前，我不認識「前端」；十年以來，「前端」已經在網站開發領域舉足輕重。
+							| 一直以來，我們都熱愛在彈指間舞動程式，玩轉像素，渴望觸及世界彼端的萬千使用者，提供他們更流暢的操作經驗。
+							| 這份工作的職稱之多：網頁設計師、軟體工程師、前端（Front-end）還是全端工程師（Fullstack），讓人目不暇給。
+							| 這個議程會從「前端」這個名詞的崛起時空談起，兼論技能樹的演化，乃至探討『為什麼我們找不到前端工程師』這篇頗受歡迎的翻譯文章：在目眩神迷的技術與名詞中回看本質，找出適者之道。
+				li
+					.issueTime  10:00
+					h4.issueTopic 休息
+				li
+					.issueTime 10:10
+					h4.issueTopic 用 RxJS 寫出可讀的程式碼
+						span.issueMore
+							i.fa.fa-angle-up
+					.issueDetail
 						.issueSpeak
 							span 講者
 							span Jerry Hong
-					li
-						.issueTime 
-						h4.issueTopic 前端團隊奴的日常
+						.issueTopicIntro
+							| 在網頁需求越來越複雜的今天，非同步行為一直是前端工程師要面臨的挑戰，不只是程式邏輯變得複雜、可讀性變低，還有不同 API 帶來的痛苦。
+							| RxJS 提供了一套完整的非同步解決方案，讓我們在面對各種非同步行為，不管是 Event, AJAX, 還是 Animation 等，我們都可以使用相同的 API 做開發，並且同時保有很高的可讀性。
+				li
+					.issueTime  11:00
+					h4.issueTopic 休息	
+				li
+					.issueTime 11:10
+					h4.issueTopic 前端團隊奴的日常
+						span.issueMore
+							i.fa.fa-angle-up
+					.issueDetail
 						.issueSpeak
 							span 講者
 							span Aaron (小狂)
-					li
-						.issueTime 
-						h4.issueTopic Vue isomorphic
+						.issueTopicIntro
+							| 談前端部門的管理與經營，從技術導入、尋才面試、規範制定、教育訓練到建立文化，以Developer的立場去理解成員的心境和處境，不只要面對程式碼，更要面對不同角色間的溝通與磨合。從只有三名前端工程師發展成十人以上的前端團隊，一睹從百廢俱興到穩定發展的進化史。
+				li
+					.issueTime  12:00
+					h4.issueTopic 休息
+				li
+					.issueTime 13:30
+					h4.issueTopic Vue isomorphic
+						span.issueMore
+							i.fa.fa-angle-up
+					.issueDetail
 						.issueSpeak
 							span 講者
-							span Jacky 
-					li 
-						.issueTime 
-						h4.issueTopic 如何自訂 Google Blockly 積木大解密
+							span Jacky810124
+						.issueTopicIntro
+							| Isomorphic （同構）讓前端和後端都使用同一份程式碼，聽起來好像不錯，到底有沒有這麼神？到底該如何做？這次透過 Vue 來讓大家搞懂什麼是 Isomorphic 。
+				li
+					.issueTime  14:20
+					h4.issueTopic 休息
+				li 
+					.issueTime 14:30
+					h4.issueTopic Google Blockly 積木大解密
+						span.issueMore
+							i.fa.fa-angle-up
+					.issueDetail
 						.issueSpeak
 							span 講者
 							span Marty
-					li 
-						.issueTime 
-						h4.issueTopic 設計與前端的結合
+						.issueTopicIntro
+							| Google Blockly積木式編程，大幅度的降低了程式設計入學門檻，相信大家都很好奇 Blockly 是如何藉由封裝實作細節，又能充分滿足擴充的需要 ! 講題將以 Webduino Blockly 為例，剖析我們如何自訂積木，甚至一步步改造 Blockly，成為 開發 IoT 的利器 ^^
+				li
+					.issueTime  15:20
+					h4.issueTopic 下午茶交流時間
+				li 
+					.issueTime 15:50
+					h4.issueTopic 網站規劃流程二三事
+						span.issueMore
+							i.fa.fa-angle-up
+					.issueDetail
 						.issueSpeak
 							span 講者
-							span Hsiang Lee
-
+							span Hsiang
+						.issueTopicIntro
+							| 本議程將會分享規劃網站的流程，從網站規劃與發想、UI 設計、前後端開發、部屬整合等相關議題，同時也會介紹數種前後端輔助工具，加速開發效率。
+				li
+					.issueTime  16:40
+					h4.issueTopic 閉幕
 block content
 
 	//- 講者
 	include ./layout/_speaker.jade
 
+	//- 贊助廠商
+	//- section.sponsor
+	
 	//- 協辦單位
 	include ./layout/_coorganizer.jade
 
@@ -116,7 +144,7 @@ block content
 						br
 						| 國際學術研究大樓B2 &nbsp;
 						a(href="images/map.jpg",target="_blank").tag Map
-					a(href="https://www.google.com/maps?ll=22.645386,120.310215&z=12&t=m&hl=zh-TW&gl=US&mapclient=embed&q=807%E5%8F%B0%E7%81%A3%E9%AB%98%E9%9B%84%E5%B8%82%E4%B8%89%E6%B0%91%E5%8D%80%E5%8D%81%E5%85%A8%E4%B8%80%E8%B7%AF100%E8%99%9F",target="_blank").info
+					a(href="https://www.google.com.tw/maps/place/807%E9%AB%98%E9%9B%84%E5%B8%82%E4%B8%89%E6%B0%91%E5%8D%80%E5%9C%8B%E9%9A%9B%E5%AD%B8%E8%A1%93%E7%A0%94%E7%A9%B6%E5%A4%A7%E6%A8%93/@22.6466619,120.3085825,17z/data=!3m1!4b1!4m5!3m4!1s0x346e04e56681aad1:0xdb131dcc46ce82dd!8m2!3d22.64665!4d120.3107168",target="_blank").info
 						i.fa.fa-map-marker.fa-2x
 						| &nbsp; 807台灣高雄市三民區十全一路100號 &nbsp;
 						i.fa.fa-external-link
@@ -137,58 +165,69 @@ block content
 							| 高捷後驛站二號出口左轉察哈爾街後直走到底，右轉接自由路直行，步行約15分鐘
 						li
 							| 高捷後驛站二號出口有公共自行車租賃系統，可憑信用卡或一卡通租借自行車騎乘前往，騎乘大約5分鐘
-			.detailMap.col-lg-8.col-md-8.col-sm-12.col-xs-12
-				iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117864.1205277871!2d120.27714099999999!3d22.606997000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04e515635045%3A0x4b611602b5a52af1!2zODA35Y-w54Gj6auY6ZuE5biC5LiJ5rCR5Y2A5Y2B5YWo5LiA6LevMTAw6Jmf!5e0!3m2!1szh-TW!2sus!4v1489664739901" width="100%" height="800" frameborder="0" style="border:0")
-
+			.detailplace.col-lg-8.col-md-8.col-sm-12.col-xs-12
+				ul.detailplace_tab
+					li
+						h4.title 會場位置
+					li.is-active 
+						h4.title 場地環境資訊
+				.detailplace_info
+					.placeMap.hide
+						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.191	1157403365!2d120.30858246496095!3d22.64666193514477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04e56681aad1%3A0xdb131dcc46ce82dd!2zODA36auY6ZuE5biC5LiJ5rCR5Y2A5ZyL6Zqb5a246KGT56CU56m25aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1490421192408" width="100%" height="710" frameborder="0" style="border:0")
+					.insideInfo
+						h4.text 高醫國際會議中心 國際學術研究大樓B2 A廳
+						.pic(style="background-image:url(images/place/place_01.jpg);")
+						br
+						| 寬敞的議會空間，高負載量的WIFI、580人獨立座位、單槍投影機*3台及提問麥克風*294支，一切的安排只希望議程能有最好的品質。
 	section.liveBroadcast
-		.about
-			p 
-				b
-					| 本次直播由史瓦特多媒體專業團隊提供
-			p 
-				| FULL HD 專業攝影機 x 3, FULL HD 數位導播機 x 1,
-			p
-				| 並使用中華電信專線確保直播品質
-
-	
+		.liveBroadcastContent
+			.about
+				p
+					| 本次直播由
+					span.br 史瓦特多媒體專業團隊提供
+				p
+					b
+						| FULL HD 專業攝影機 x 3,
+						span.br  FULL HD 數位導播機 x 1,
+				p
+					b
+						| 並使用中華電信專線
+						span.br 確保直播品質
+			.qAndA
+				h3
+					| Q&A
+				.qAndAContent.col-md-9.col-sm-8
+					.qAndAContent_Q
+						| 請問直播之後會提供錄影檔嗎？
+					.qAndAContent_A
+						| 購買直播票、現場票皆可觀看錄影檔，在購票時填入 Google Gmail 帳號即可。
+					br
+					.qAndAContent_Q
+						| 請問一定要 Gmail 帳號嗎？
+					.qAndAContent_A
+						| 直播會使用 Youtube 並且限制帳號，所以需要用 Gmail 帳號喔。
+					br
+					.qAndAContent_Q
+						| 直播早鳥票 與 直播票 有差異嗎？
+					.qAndAContent_A
+						| 早鳥票是優惠價格，兩者無其他差異。
 	//- footer
-	//- include ./layout/_footer.jade
 	section.footer
-		//- //- A
-		//- .figure.figure-star-02.flare-01.figure-positionA-01.figure-m
-		//- .figure.figure-star-09.hop-01.figure-positionA-02.figure-xs
-		//- .figure.figure-star-01.figure-positionA-03.figure-l
-		//- .figure.figure-star-04.hop-01.figure-positionA-04.figure-xs
-		//- .figure.figure-star-07.flare-01.figure-positionA-05.figure-xs
-		//- .figure.figure-star-05.shiny-01.figure-positionA-06.figure-xs			
-		//- //- B
-		//- .figure.figure-star-01.flare-01.figure-positionB-01.figure-m
-		//- .figure.figure-star-05.hop-01.figure-positionB-02.figure-s
-		//- .figure.figure-star-03.hop-01.figure-positionB-03.figure-s
-		//- .figure.figure-star-09.figure-positionB-04.figure-xs
-		//- .figure.figure-star-08.flare-01.figure-positionB-05.figure-xs
-		//- //- C
-		//- .figure.figure-star-01.hop-01.figure-positionC-01.figure-l
-		//- .figure.figure-star-07.shiny-01.figure-positionC-02.figure-xs
-		//- .figure.figure-star-02.hop-02.figure-positionC-03.figure-s
-		//- .figure.figure-star-03.flare-02.figure-positionC-04.figure-xl
-		//- .figure.figure-star-04.hop-01.figure-positionC-05.figure-m
-		//- .figure.figure-star-08.flare-01.figure-positionC-06.figure-xs
-		//- //- D
-		//- .figure.figure-star-02.hop-01.figure-positionD-01.figure-m
-		//- .figure.figure-star-03.hop-01.figure-positionD-02.figure-m
-		//- .figure.figure-star-09.figure-positionD-03.figure-xs
-		.figure.figure-planet-03
-		.figure.figure-planet-05
+		//- 星背景
+		include ./bg/_footerfigureOuter.jade
 		.footerContent
-			a.btn.btn-primary.is-muted(href="#",title="KKTIX 售票系統") KKTIX 售票系統
-			p.info -活動尚未開始-
+			a.btn.btn-primary.is-muted(href="http://gonsakon-7655f2.kktix.cc/events/ksf2e",title="KKTIX 售票系統",target="_blank") 熱烈報名中
+			//- p.info -活動尚未開始-
 			.footerContent_contact
 				img(src="images/logo/logo.png")
-				a(herf="#").fa.fa-facebook-square.fa-lg
-				a(herf="#").fa.fa-comments.fa-lg
+				a(href="https://www.facebook.com/groups/358503154261390/",target="_blank",title=" 高雄前端社群")
+					i.fa.fa-facebook-square.fa-lg
+				a(href="http://m.me/hexschool",target="_blank",title="Facebook 客服")
+					i.fa.fa-comments.fa-lg
 				p.info © 2017 高雄前端社群
-
+	section.floater
+		a.floater_btn(href="http://m.me/hexschool",target="_blank",title="Facebook 客服") 
+			i.fa.fa-comments.fa-lg
 block scripts
 	script(src="plugin/jquery.min.js")
 	script(src="js/all.js")

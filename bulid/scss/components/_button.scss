@@ -13,9 +13,7 @@
     &.is-active,
     &:hover,
     &:focus,
-    &:active,
-    &:active:focus,
-    &:link {
+    &:active{
         border: 2px solid $colorMainThird;
         background: $colorMainSecond;
         color: $colorMainThird;

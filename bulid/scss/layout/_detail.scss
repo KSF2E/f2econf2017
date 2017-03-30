@@ -1,5 +1,6 @@
 .detail {
     background: $colorMainThird;
+    color: $colorMainFirst;
     position: relative;
     z-index: 1;
     padding: 10vh 4%;
@@ -13,21 +14,6 @@
     box-shadow: 0 0 10px 0 rgba(255, 223, 60, 0.8);
     &:before {
         background: $colorMainSecond;
-    }
-}
-
-.detailContent {
-    padding: 0 2%;
-    margin-bottom: -10px;
-    color: $colorMainFirst !important;
-    li {
-        padding-bottom: 10px;
-    }
-    &>li {
-        border-bottom: 1px dotted $colorGray;
-        &:last-child {
-            border-bottom: none;
-        }
     }
     h4 {
         line-height: 1.4;
@@ -57,6 +43,20 @@
     }
 }
 
+.detailContent {
+    padding: 0 2%;
+    margin-bottom: -10px;
+    li {
+        padding-bottom: 10px;
+    }
+    &>li {
+        border-bottom: 1px dotted $colorGray;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
 ul.detailContent_list {
     padding: 5px 0 5px 30px;
     text-align: justify;
@@ -76,11 +76,57 @@ ul.detailContent_list {
     }
 }
 
-.detailMap {
+.detailplace {
     padding: 0;
-    margin-bottom: -5px;
     border-left: 1px solid $colorMainThird;
-    @include mobile() {
-        display: none;
+    @include pad () {
+        border-top: 1px dotted $colorGray;
+        border-left: none;
+    }
+    @include pad-below () {
+        border-left: none;
+    }
+    @include mobile () {
+
+        border-top: 1px solid $colorGray-light;
+        border-left: none;
+    }
+}
+
+.detailplace_tab {
+    li {
+        background-color: $colorGray-light;
+        width: 50%;
+        float: left;
+        cursor: pointer;
+        &.is-active,
+        &:focus,
+        &:active,
+        &:active:focus {
+            background-color: #f3f3f3;
+        }
+    }
+}
+
+.placeMap {
+    @include mobile() {}
+}
+
+.insideInfo {
+    padding: 0 4% 10px;
+    height: 710px;
+    overflow: auto;
+    width: 100%;
+    .text {
+        padding: 0;
+    }
+    @include pad () {
+        height: inherit;
+    }
+    @include pad-below () {
+        height: inherit;
+    }
+    @include mobile () {
+        height: inherit;
     }
 }

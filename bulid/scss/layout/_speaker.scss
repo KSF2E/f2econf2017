@@ -1,11 +1,10 @@
 .speaker {
     position: relative;
     z-index: 1;
-    // background-image: url(../images/bg/bg_deepStar.png);
-    // background-size: 45px;
-    padding: 10vh 0;
+    padding: 10vh 4%;
     .title {
         color: $colorMainThird;
+        margin-bottom: 0;
     }
     .text {
         text-align: justify;
@@ -51,7 +50,7 @@
     li {
         padding: 10px 1% 30px;
         @include mobile() {
-            padding: 5px 4%;
+            // padding: 5px 4%;
         }
     }
 }
