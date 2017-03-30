@@ -8,4 +8,9 @@ $(function() {
     	$(this).toggleClass('is-active').siblings().toggleClass('is-active');
     	$('.detailplace_info').children().toggleClass('hide');
     });
+
+    // Tracking
+    $('.track-AddToWishlist').on('click', function(){
+        fbq('track', 'AddToWishlist');
+    })
 });
