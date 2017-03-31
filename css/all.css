@@ -7794,6 +7794,10 @@ a {
   color: #fff;
 }
 
+img {
+  max-width: 100%;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -7886,18 +7890,6 @@ ul {
   .header_mainVisual .mainVisualPic:before {
     padding-top: 75%;
   }
-}
-
-.nav {
-  position: fixed;
-  z-index: 2;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
-  width: 100%;
-}
-
-.nav li {
-  display: inline-block;
 }
 
 .panel {
@@ -8065,6 +8057,24 @@ p.info {
 .issueTopicIntro {
   margin-top: 10px;
   text-align: justify;
+}
+
+.sponsor {
+  background: #ffdf3c;
+  position: relative;
+  z-index: 1;
+  padding: 10vh 4%;
+}
+
+.sponsor-panel {
+  margin: 60px auto;
+  padding: 30px 0;
+  -webkit-box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
+          box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
+}
+
+.sponsor-panel:before {
+  background: #ff4f94;
 }
 
 .speaker {
@@ -8298,7 +8308,7 @@ ul.detailContent_list li:before {
 }
 
 .coorganizer {
-  background: #ffdf3c;
+  background: #39006c;
   position: relative;
   z-index: 1;
   padding: 10vh 4%;
@@ -8307,12 +8317,12 @@ ul.detailContent_list li:before {
 .coorganizer-panel {
   margin: 60px auto;
   padding: 30px 0;
-  -webkit-box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
-          box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
+  -webkit-box-shadow: 0 0 10px 0 rgba(255, 223, 60, 0.8);
+          box-shadow: 0 0 10px 0 rgba(255, 223, 60, 0.8);
 }
 
 .coorganizer-panel:before {
-  background: #ff4f94;
+  background: #24ffb0;
 }
 
 .liveBroadcast {
