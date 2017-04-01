@@ -1,5 +1,5 @@
 .coorganizer {
-    background: $colorMainSecond;
+    background: $colorSubFirst;
     position: relative;
     z-index: 1;
     padding: 10vh 4%;
@@ -8,8 +8,8 @@
 .coorganizer-panel {
     margin: 60px auto;
     padding: 30px 0;
-    box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
+    box-shadow: 0 0 10px 0 rgba(255, 223, 60, 0.8);
     &:before {
-        background: $colorMainThird;
+        background: $colorMainFouth;
     }
 }
