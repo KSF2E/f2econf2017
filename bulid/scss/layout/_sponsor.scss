@@ -9,7 +9,11 @@
     margin: 60px auto;
     padding: 30px 0;
     box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
+    overflow: hidden;
     &:before {
         background: $colorMainThird;
     }
+}
+.sponsor-content {
+    padding: 0 30px;
 }

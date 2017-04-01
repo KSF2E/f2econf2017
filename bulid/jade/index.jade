@@ -29,8 +29,15 @@ block content
 			.tab_h1 贊助廠商
 			.tab_sub Sponsors 
 		.panel.sponsor-panel
-			a.col-lg-12.col-md-12.col-sm-12.col-xs-12(href="http://www.super-landing.com/",title="光速火箭",target="_blank")
-				img(src="images/sponsor/speedingRocket.jpg",title="光速火箭")
+			a.col-xs-12(href="http://www.super-landing.com/",title="一頁商店",target="_blank")
+				img(src="images/sponsor/superlanding.jpg",title="一頁商店")
+			.row
+				.col-sm-8.col-sm-offset-2
+					.sponsor-content
+						h3.text-center 一頁商店
+						p 一頁商店 (
+							a.text-primary(href="www.super-landing.com" target="_blank" title="一頁商店") www.super-landing.com
+							| ) 是一個 Landing page based EC 系統，我們要解決的問題是降低營運電商的所有成本 (人力成本, 行銷費用, 管理成本, 客服成本) 進而提升獲利，我們的使命感是，將營運電商的門檻拉到最低，讓想做電商的人可以更專注在產品和行銷上。
 	
 	//- 協辦單位
 	include ./layout/_coorganizer.jade
@@ -124,6 +131,14 @@ block content
 			.tab.pinkDeco.yellowStyle(style="padding: 15px; margin-bottom: 30px")
 				.tab_h1 購票
 				.tab_sub Tickets
+			.about.text-center.if-clock
+				p
+					b
+						| 4/5 前購買票券享優惠折扣
+				p
+					b.clock
+
+			input#footer-clock(type="hidden" value="2017/4/6")
 			.row
 				.col-md-8.col-md-offset-2
 					div(style="padding: 0 15px; background: white;")
@@ -146,8 +161,8 @@ block content
 		a.floater_btn(href="http://m.me/hexschool",target="_blank",title="Facebook 客服") 
 			i.fa.fa-comments.fa-lg
 block scripts
-	script(src="plugin/jquery.min.js")
-	script(src="js/all.js")
+	script(src="plugin/vendor.js?#{new Date().getTime()}")
+	script(src="js/all.js?#{new Date().getTime()}")
 	script.
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
