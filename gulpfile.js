@@ -5,6 +5,7 @@ var gulp = require('gulp'),
     autoprefixer = require('autoprefixer'),
     pngquant = require('imagemin-pngquant'),
     ghPages = require('gulp-gh-pages'),
+    concat = require('gulp-concat'),
     jpegoptim = require('imagemin-jpegoptim');
 
 var path = {
@@ -85,6 +86,7 @@ gulp.task('scripts', function() {
             errorHandler: $.notify.onError("js compile error")
         }))
         .pipe($.uglify())
+        .pipe(concat('all.js'))
         .pipe(gulp.dest(path.public + 'js'))
         .pipe(browserSync.reload({
             stream: true
@@ -126,7 +128,8 @@ gulp.task('fonts', function() {
 
 gulp.task('jsPlugin', function() {
 
-    gulp.src(path.bower + 'jquery/dist/jquery.min.js')
+    gulp.src([path.bower + 'jquery/dist/jquery.min.js', path.bower + 'jquery.countdown/dist/jquery.countdown.min.js'])
+        .pipe(concat('vendor.js'))
         .pipe(gulp.dest(path.public + 'plugin/'));
 
 });
