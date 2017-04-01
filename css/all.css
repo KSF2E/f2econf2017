@@ -8071,10 +8071,15 @@ p.info {
   padding: 30px 0;
   -webkit-box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
           box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
+  overflow: hidden;
 }
 
 .sponsor-panel:before {
   background: #ff4f94;
+}
+
+.sponsor-content {
+  padding: 0 30px;
 }
 
 .speaker {
@@ -9303,6 +9308,10 @@ ul.detailContent_list li:before {
 
 .tab_sub {
   font-size: 1.5rem;
+}
+
+.if-clock {
+  display: none;
 }
 
 /*!
