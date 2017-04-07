@@ -66,3 +66,15 @@
         position: absolute;
     }
 }
+
+iframe.kktix {
+    padding-top: 10px;
+    @include pad-below () {
+        padding-top: 20px;
+        height: 480px;
+    }
+    @include mobile() {
+        padding-top: 20px;
+        height: 480px;
+    }
+}

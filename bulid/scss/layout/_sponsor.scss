@@ -2,18 +2,40 @@
     background: $colorMainSecond;
     position: relative;
     z-index: 1;
-    padding: 10vh 4%;
+    padding: 8vh 4%;
 }
 
 .sponsor-panel {
     margin: 60px auto;
-    padding: 30px 0;
+    // padding: 30px 0 0;
     box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
     overflow: hidden;
     &:before {
         background: $colorMainThird;
     }
+    p {
+        text-align: justify;
+        a {
+            color: $colorMainFouth-dark;
+            &.is-active,
+            &:hover,
+            &:focus,
+            &:active,
+            &:active:focus {
+                color: $colorMainSecond;
+            }
+        }
+    }
+    li {
+        overflow: auto;
+        border-bottom: 1px dotted $colorGray;
+        padding: 15px 0;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
 }
+
 .sponsor-content {
-    padding: 0 30px;
+    padding: 0 2%;
 }

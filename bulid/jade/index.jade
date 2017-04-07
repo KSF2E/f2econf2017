@@ -35,71 +35,26 @@ block content
 			.tab_h1 贊助廠商
 			.tab_sub Sponsors 
 		.panel.sponsor-panel
-			a.col-xs-12(href="http://www.super-landing.com/",title="一頁商店",target="_blank")
-				img(src="images/sponsor/superlanding.jpg",title="一頁商店")
-			.row
-				.col-sm-8.col-sm-offset-2
-					.sponsor-content
+			ul.sponsor-content
+				li
+					a.col-xs-12(href="http://www.super-landing.com/",title="一頁商店",target="_blank")
+						img(src="images/sponsor/superlanding.jpg",title="一頁商店")
+					.col-sm-8.col-sm-offset-2
 						h3.text-center 一頁商店
 						p 一頁商店 (
-							a.text-primary(href="http://www.super-landing.com/" target="_blank" title="一頁商店") www.super-landing.com
-							| ) 是一個 Landing page based EC 系統，我們要解決的問題是降低營運電商的所有成本 (人力成本, 行銷費用, 管理成本, 客服成本) 進而提升獲利，我們的使命感是，將營運電商的門檻拉到最低，讓想做電商的人可以更專注在產品和行銷上。
-	
+							a.text-primary(href="http://www.super-landing.com/" target="_blank" title="一頁商店")  www.super-landing.com 
+							| ) 是一個 Landing page based EC 系統，我們要解決的問題是降低營運電商的所有成本 (人力成本，行銷費用，管理成本，客服成本) 進而提升獲利，我們的使命感是，將營運電商的門檻拉到最低，讓想做電商的人可以更專注在產品和行銷上。
+				li
+					.col-lg-4.col-md-4.col-sm-4.col-xs-6
+						img(src="images/sponsor/UOF.jpg",title="一等一科技")
+					//- a.col-lg-4.col-md-4.col-sm-4.col-xs-6(href="http://www.edetw.com/",title="一等一科技",target="_blank")
+						img(src="images/sponsor/UOF.jpg",title="一等一科技")
 	//- 協辦單位
 	include ./layout/_coorganizer.jade
 
 	//- 詳細資訊
 	include ./layout/_detail.jade
-	//- section.detail
-		.tab.yellowDeco
-			.tab_h1 詳細資訊
-			.tab_sub Details
-		.panel.detail-panel
-			ul.detailContent.col-lg-4.col-md-4.col-sm-12.col-xs-12
-				li
-					h4.title 日期
-					h4.text 2016/05/06 星期六
-				li
-					h4.title 地點
-					h4.text 高醫國際會議中心 
-						br
-						| 國際學術研究大樓B2 &nbsp;
-						a(href="images/map.jpg",target="_blank").tag Map
-					a(href="https://www.google.com.tw/maps/place/807%E9%AB%98%E9%9B%84%E5%B8%82%E4%B8%89%E6%B0%91%E5%8D%80%E5%9C%8B%E9%9A%9B%E5%AD%B8%E8%A1%93%E7%A0%94%E7%A9%B6%E5%A4%A7%E6%A8%93/@22.6466619,120.3085825,17z/data=!3m1!4b1!4m5!3m4!1s0x346e04e56681aad1:0xdb131dcc46ce82dd!8m2!3d22.64665!4d120.3107168",target="_blank").info
-						i.fa.fa-map-marker.fa-2x
-						| &nbsp; 807台灣高雄市三民區十全一路100號 &nbsp;
-						i.fa.fa-external-link
-				li 
-					h4.title 交通資訊
-					ul.detailContent_list
-						li 
-							| 距離火車高雄站後站出口約兩公里，車程約5分鐘
-						li
-							| 高鐵車站轉搭計程車約17分鐘，沿大中路於自由路右轉，於同盟路左轉
-						li
-							| 高捷後驛站出入口2搭乘紅29號公車至高醫站下車，班距10〜15分鐘，約需搭乘8分鐘
-						li
-							| 高捷後驛站二號出口轉乘建工幹線(紅30號)公車至高醫站下車，班距12~25分鐘，約需搭乘6分鐘
-						li
-							| 高捷後驛站二號出口轉乘高醫免費接駁車班距20〜25分鐘，約需搭乘8分鐘
-						li 
-							| 高捷後驛站二號出口左轉察哈爾街後直走到底，右轉接自由路直行，步行約15分鐘
-						li
-							| 高捷後驛站二號出口有公共自行車租賃系統，可憑信用卡或一卡通租借自行車騎乘前往，騎乘大約5分鐘
-			.detailplace.col-lg-8.col-md-8.col-sm-12.col-xs-12
-				ul.detailplace_tab
-					li
-						h4.title 會場位置
-					li.is-active 
-						h4.title 場地環境資訊
-				.detailplace_info
-					.placeMap.hide
-						iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.191	1157403365!2d120.30858246496095!3d22.64666193514477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e04e56681aad1%3A0xdb131dcc46ce82dd!2zODA36auY6ZuE5biC5LiJ5rCR5Y2A5ZyL6Zqb5a246KGT56CU56m25aSn5qiT!5e0!3m2!1szh-TW!2stw!4v1490421192408" width="100%" height="710" frameborder="0" style="border:0")
-					.insideInfo
-						h4.text 高醫國際會議中心 國際學術研究大樓B2 A廳
-						.pic(style="background-image:url(images/place/place_02.jpg);")
-						br
-						| 寬敞的議會空間，高負載量的WIFI、580人獨立座位、單槍投影機*3台及提問麥克風*294支，一切的安排只希望議程能有最好的品質。
+
 	section.liveBroadcast
 		.liveBroadcastContent
 			.about
@@ -148,7 +103,7 @@ block content
 			.row
 				.col-md-8.col-md-offset-2
 					div(style="padding: 0 15px; background: white;")
-						iframe.kktix(src='https://kktix.com/tickets_widget?slug=ksf2e', frameborder='0', height='480', width='100%', vspace='0', hspace='0', marginheight='5', marginwidth='5', scrolling='auto', allowtransparency='true')
+						iframe.kktix(src='https://kktix.com/tickets_widget?slug=ksf2e', frameborder='0', height='380', width='100%', vspace='0', hspace='0', marginheight='5', marginwidth='5', scrolling='auto', allowtransparency='true')
 	//- footer
 	section.footer
 		//- 星背景
