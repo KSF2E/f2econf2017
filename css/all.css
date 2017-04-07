@@ -8063,12 +8063,11 @@ p.info {
   background: #ffdf3c;
   position: relative;
   z-index: 1;
-  padding: 10vh 4%;
+  padding: 8vh 4%;
 }
 
 .sponsor-panel {
   margin: 60px auto;
-  padding: 30px 0;
   -webkit-box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
           box-shadow: 0 0 10px 0 rgba(32, 255, 176, 0.8);
   overflow: hidden;
@@ -8078,14 +8077,36 @@ p.info {
   background: #ff4f94;
 }
 
+.sponsor-panel p {
+  text-align: justify;
+}
+
+.sponsor-panel p a {
+  color: #08cd86;
+}
+
+.sponsor-panel p a.is-active, .sponsor-panel p a:hover, .sponsor-panel p a:focus, .sponsor-panel p a:active, .sponsor-panel p a:active:focus {
+  color: #ffdf3c;
+}
+
+.sponsor-panel li {
+  overflow: auto;
+  border-bottom: 1px dotted #9B9B9B;
+  padding: 15px 0;
+}
+
+.sponsor-panel li:last-child {
+  border-bottom: none;
+}
+
 .sponsor-content {
-  padding: 0 30px;
+  padding: 0 2%;
 }
 
 .speaker {
   position: relative;
   z-index: 1;
-  padding: 10vh 4%;
+  padding: 8vh 4%;
 }
 
 .speaker .title {
@@ -8160,7 +8181,7 @@ p.info {
   color: #2a1672;
   position: relative;
   z-index: 1;
-  padding: 10vh 4%;
+  padding: 8vh 4%;
 }
 
 .detail-panel {
@@ -8316,7 +8337,7 @@ ul.detailContent_list li:before {
   background: #39006c;
   position: relative;
   z-index: 1;
-  padding: 10vh 4%;
+  padding: 8vh 4%;
 }
 
 .coorganizer-panel {
@@ -8413,6 +8434,24 @@ ul.detailContent_list li:before {
   content: 'A :';
   left: -1.8em;
   position: absolute;
+}
+
+iframe.kktix {
+  padding-top: 10px;
+}
+
+@media (max-width: 767px) {
+  iframe.kktix {
+    padding-top: 20px;
+    height: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  iframe.kktix {
+    padding-top: 20px;
+    height: 480px;
+  }
 }
 
 .footer {
