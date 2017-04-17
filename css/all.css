@@ -8371,7 +8371,7 @@ ul.detailContent_list li:before {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 100px 4%;
+  padding: 10vh 4%;
 }
 
 .about {
@@ -8401,6 +8401,10 @@ ul.detailContent_list li:before {
   .about span.br {
     display: block;
   }
+}
+
+.about img {
+  margin-bottom: 25px;
 }
 
 .qAndA {
@@ -8499,6 +8503,14 @@ iframe.kktix {
   font-size: 0.85714rem;
   margin: 5vh auto 2vh;
   color: #9B9B9B;
+}
+
+.navbar-fixed-bottom {
+  bottom: -1px;
+}
+
+.bg-primary {
+  background-color: #4fc6ff;
 }
 
 .floater {
