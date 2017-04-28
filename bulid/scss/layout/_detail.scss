@@ -87,7 +87,6 @@ ul.detailContent_list {
         border-left: none;
     }
     @include mobile () {
-
         border-top: 1px solid $colorGray-light;
         border-left: none;
     }
@@ -96,14 +95,19 @@ ul.detailContent_list {
 .detailplace_tab {
     li {
         background-color: $colorGray-light;
-        width: 50%;
+        width: 33.333%;
         float: left;
         cursor: pointer;
+        text-align: center;
         &.is-active,
         &:focus,
         &:active,
         &:active:focus {
             background-color: #f3f3f3;
+        }
+        border-right: 1px solid hsla(0, 0%, 61%, .2);
+        &:last-child {
+            border-right: none;
         }
     }
 }

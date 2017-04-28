@@ -5,8 +5,9 @@ $(function() {
     });
 
     $('.detailplace_tab>li').click(function(event) {
-    	$(this).toggleClass('is-active').siblings().toggleClass('is-active');
-    	$('.detailplace_info').children().toggleClass('hide');
+        var tabContent = $(this).children().attr('data-tab');
+    	$(this).addClass('is-active').siblings().removeClass('is-active');
+        $("."+tabContent).removeClass('hide').siblings().addClass('hide');
     });
 
     // Tracking
