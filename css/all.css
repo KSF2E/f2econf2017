@@ -8295,13 +8295,19 @@ ul.detailContent_list li:before {
 
 .detailplace_tab li {
   background-color: #d8d8d8;
-  width: 50%;
+  width: 33.333%;
   float: left;
   cursor: pointer;
+  text-align: center;
+  border-right: 1px solid rgba(156, 156, 156, 0.2);
 }
 
 .detailplace_tab li.is-active, .detailplace_tab li:focus, .detailplace_tab li:active, .detailplace_tab li:active:focus {
   background-color: #f3f3f3;
+}
+
+.detailplace_tab li:last-child {
+  border-right: none;
 }
 
 .insideInfo {
