@@ -7921,7 +7921,15 @@ ul {
 p.info {
   color: #24ffb0;
   font-weight: 100;
-  font-size: 0.85714rem;
+}
+
+p.info a {
+  color: #24ffb0;
+  font-size: 1.2em;
+}
+
+p.info a.is-active, p.info a:hover, p.info a:focus, p.info a:active, p.info a:active:focus {
+  color: #ff4f94;
 }
 
 .agenda {
