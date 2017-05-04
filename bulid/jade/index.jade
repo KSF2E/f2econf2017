@@ -13,13 +13,18 @@ block header
 		.header_mainVisual
 			.mainVisualPic
 		a.btn.btn-primary.track-AddToWishlist(href="http://gonsakon-7655f2.kktix.cc/events/ksf2e",title="KKTIX 售票系統",target="_blank") 熱烈報名中
-		.about.text-center.if-clock.mt-3
+		//- .about.text-center.if-clock.mt-3
 			p
 				//- b
 					| 直播票搶購倒數至 4/30
 			p
 				b.clock
-		//- p.info -活動尚未開始-
+		p.info
+			span 
+				a(href="https://github.com/KSF2E/news",title="活動訊息",target="_blank") 活動訊息
+			span  &nbsp;| &nbsp;
+			span
+				a(href="https://gitter.im/ksf2etw/Lobby",title="討論區",target="_blank") 討論區
 
 	//- 議程
 	include ./layout/_agenda.jade
@@ -109,6 +114,12 @@ block content
 		include ./bg/_footerfigureOuter.jade
 		.footerContent
 			a.btn.btn-primary.track-AddToWishlist(href="http://gonsakon-7655f2.kktix.cc/events/ksf2e",title="KKTIX 售票系統",target="_blank") 熱烈報名中
+			p.info
+				span 
+					a(href="https://github.com/KSF2E/news",title="活動訊息",target="_blank") 活動訊息
+				span  &nbsp;| &nbsp;
+				span
+					a(href="https://gitter.im/ksf2etw/Lobby",title="討論區",target="_blank") 討論區
 			//- p.info -活動尚未開始-
 			.footerContent_contact
 				img(src="images/logo/logo.png")
@@ -118,7 +129,7 @@ block content
 					i.fa.fa-comments.fa-lg
 				p.info © 2017 高雄前端社群
 	
-	.navbar.navbar-fixed-bottom.bg-primary.text-center(style="min-height: auto; position: sticky")
+	//- .navbar.navbar-fixed-bottom.bg-primary.text-center(style="min-height: auto; position: sticky")
 		.clock.h4
 	section.floater
 		a.floater_btn(href="http://m.me/hexschool",target="_blank",title="Facebook 客服") 

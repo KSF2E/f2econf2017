@@ -23,8 +23,20 @@
     padding: 5px 4%;
 }
 
-p.info {
-    color: $colorMainFouth;
-    font-weight: 100;
-    font-size: $font-small;
+p {
+    &.info {
+        color: $colorMainFouth;
+        font-weight: 100;
+        a {
+            color: $colorMainFouth;
+            font-size: 1.2em;
+            &.is-active,
+            &:hover,
+            &:focus,
+            &:active,
+            &:active:focus {
+                color: $colorMainThird;
+            }
+        }
+    }
 }
