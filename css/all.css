@@ -8460,14 +8460,14 @@ iframe.kktix {
 @media (max-width: 767px) {
   iframe.kktix {
     padding-top: 20px;
-    height: 480px;
+    height: 320px;
   }
 }
 
 @media (max-width: 480px) {
   iframe.kktix {
     padding-top: 20px;
-    height: 480px;
+    height: 320px;
   }
 }
 
